@@ -22,7 +22,7 @@ If you’re a programmer, I’m sure you’ve been through this at least once be
 
 Luckily, Flatiron’s platform Learn.co lets you chat live with a technical coach when you get stuck on something—which I probably should have utilized about 30-40 minutes into my struggle instead of driving myself completely insane. I was connected with technical coach James (shout out to James!) and we got to work. He seemed a bit confused because everything looked okay to him, so we tried a few small tweaks at a time to see if we could get the code to pass. In the end, we discovered that I was returning false at the wrong part of the program. If you return false inside an iterator, the method only accepts the first argument in your array and ends before iterating through the rest of the arguments. In other words, not good.
 
-![Screenshot of side-by-side code](https://meghangutshall.com/uploads/1/1/9/5/119558693/images/return-false-860.jpg)
+![Screenshot of side-by-side code](https://meghangutshall.com/uploads/1/1/9/5/119558693/images/return-false.jpg)
 
 Ugh!! After all of that confusion, hard work, and frustration, the end result was switching just two lines to get the program to pass the test. Two lines! That’s it! I laughed at myself, thanked James profusely, and was able to code the rest of the program on my own to complete the Tic Tac Toe Game Status lab. Again (over a well-deserved beer), I thought to myself: ‘Have patience. You’ll get this down soon.’
 
