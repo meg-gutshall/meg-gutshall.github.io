@@ -408,12 +408,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #006080;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #006080;
 }
 img::selection {
   color: white;
@@ -424,7 +424,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #0085a1;
+  webkit-tap-highlight-color: #006080;
 }
 
 .svg-center {
