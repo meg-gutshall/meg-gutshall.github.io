@@ -158,12 +158,6 @@ hr.small {
 h1.about {
   color: #550055;
 }
-hr.about {
-  max-width: 100px;
-  margin: 15px auto;
-  border-width: 4px;
-  border-color: #550055;
-}
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
