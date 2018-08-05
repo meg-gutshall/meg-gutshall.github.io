@@ -155,7 +155,7 @@ hr.small {
   color: white;
 }
 h1.about, hr.about {
-  color: #550055
+  color: #550055 !important;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
