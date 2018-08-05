@@ -357,6 +357,7 @@ form .row:first-child .floating-label-form-group {
   letter-spacing: 1px;
   border-radius: 0;
   padding: 15px 25px;
+  background-color: #a40080;
 }
 .btn-lg {
   font-size: 16px;
