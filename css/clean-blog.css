@@ -235,12 +235,12 @@ h1.about {
   }
 }
 .post-preview > a {
-  color: #404040;
+  color: #a40080;
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #006080;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -260,11 +260,11 @@ h1.about {
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #404040;
+  color: #a40080;
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
+  color: #006080;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -344,7 +344,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #0085a1;
+  color: #006080;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -364,8 +364,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #006080;
+  border: 1px solid #006080;
   color: white;
 }
 .pager {
@@ -392,8 +392,8 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #006080;
+  border: 1px solid #006080;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
