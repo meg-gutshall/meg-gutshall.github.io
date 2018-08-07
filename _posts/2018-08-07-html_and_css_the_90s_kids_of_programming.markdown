@@ -9,38 +9,38 @@ After almost two months in the [online full stack web developer program](https:/
 
 ![HTML & CSS Symbols](https://meghangutshall.com/uploads/1/1/9/5/119558693/images/HTML_CSS.png)
 
-__HTML: The Language of the Web__
+### __HTML: The Language of the Web__
 HTML is the language of the web, however, it is __not__ a programming language, but rather a _markup_ language. HTML documents are comprised of content (text written in plain English) and markup (HTML tags meant to structure the content). These documents are used by web servers and web browsers to display the non-markup version of the document—a web page—in a process called rendering.
 
 Here’s a basic overview of the rendering process: HTML documents are stored at unique locations (IP addresses) on web servers and made available to web browsers via the Internet. A user will type a URL into a web browser’s search bar and the web browser feeds the URL into the DNS, which then translates it to its corresponding IP address. The web browser then uses HTTP to communicate with the server at the returned IP address and requests the sought-after information—the HTML files used to render the web page. Once the web browser receives these files, it translates the HTML code and displays the web page on our screen.
 
-__The Semantics of HTML__
+### __The Semantics of HTML__
 As a linguistics nerd I love HTML due to its semantic capabilities, so bear with me as I geek out for a minute…
 
 An HTML document consists of two sections: a head and a body. The head is not displayed as part of the web page when the browser loads the HTML document. Instead it contains data (such as page title, a favicon, links to the document’s CSS and JavaScript, and metadata) which relays additional information not contained in the body section to the web browser. A web page’s title and favicon appear in the window tab of the web browser. The CSS link provides styling rules for the HTML document and the JavaScript link enables additional, more complex features. Metadata defines the document’s language, character encoding, author, and description. Adding an accurate description that includes applicable keywords is especially important as it affects the site’s SEO and will determine the frequency with which the web page appears in Internet search results.
 
 The meat of the document, the body, is composed of HTML elements. An HTML element contains an opening tag, a section of content, and a closing tag. The type of tag used in the element determines the meaning and structure (semantics!) of the enclosed content. Common HTML tags denote links, line breaks, headings, images, lists, paragraphs, and tables. Web browsers read the HTML tags and apply their meaning to the enclosed content when rendering a web page. HTML elements can also accept attributes to transfer more detailed information regarding the enclosed content. It is important to assign HTML tags accurately, not only to structure the web page correctly, but also to enable website accessibility for those who use screen readers and other tools to navigate the web.
 
-__CSS: The Beauty to HTML’s Beast__
+### __CSS: The Beauty to HTML’s Beast__
 CSS styles web pages by assigning a CSS selector to an HTML element and a declaration to the selector. The most commonly used CSS selectors point toward an HTML element, class, or id, but can also call on an element’s attribute or its relationship with the surrounding elements. CSS declarations are made up of properties and their corresponding property values. Multiple CSS declarations can apply to one or more CSS selectors–called a declaration block–and multiple CSS selectors can apply to one or more HTML elements, giving CSS a totally customizable execution.
 
 A general convention among programmers is to completely separate the tasks of writing content (HTML) and styling content (CSS). Although CSS was designed specifically to work with HTML, in most cases a site’s CSS is located in an entirely separate document than the HTML. Instead, the HTML document stores a link to its corresponding CSS document in the head section which the web browser calls on to style the web page at the time of rendering.
 
-__Why HTML and CSS Are Important for Programmers__
+### __Why HTML and CSS Are Important for Programmers__
 The combination of these two languages make up a huge part of front-end web development. As a full stack developer, you’ll need to be able to read and write HTML to code and debug your programs... and you’ll want to be familiar with CSS to make your programs pretty! While on Flatiron’s learning platform, the message that stood out to be the most in the HTML and CSS Introduction section was: __All pathways to web programming success rely on strength in HTML.__ And as I see it, the first step on that pathway is your [portfolio website](https://meghangutshall.com/). This cannot be created without HTML and will most likely look awful without CSS. Your website is your prospective employers’ first impression of you as a programmer—so make it a good one!
 
 There is so much information available on HTML and CSS as they are fundamental tools in web development and, simply, because they have been around for a very long time. I could write a dozen more blog posts on the topic but, for now, will leave you with a short index of the aforementioned acronyms as well as some of my favorite resources regarding HTML and CSS.
 
-__Index__
-CSS → Cascading Style Sheets
-DNS → Domain Name Server
-HTML → Hypertext Markup Language
-HTTP → Hypertext Transfer Protocol
-SEO → Search Engine Optimization
-URL → Uniform Resource Locator
+#### __Index__
+* CSS → Cascading Style Sheets
+* DNS → Domain Name Server
+* HTML → Hypertext Markup Language
+* HTTP → Hypertext Transfer Protocol
+* SEO → Search Engine Optimization
+* URL → Uniform Resource Locator
 
-__Resources__
-[Mozilla Development Network](https://developer.mozilla.org/en-US/docs/Learn/HTML)
-[Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/)
-[CSS Tricks](https://css-tricks.com/guides/)
-[W3Schools](https://www.w3schools.com/)
+#### __Resources__
+* [Mozilla Development Network](https://developer.mozilla.org/en-US/docs/Learn/HTML)
+* [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/)
+* [CSS Tricks](https://css-tricks.com/guides/)
+* [W3Schools](https://www.w3schools.com/)
