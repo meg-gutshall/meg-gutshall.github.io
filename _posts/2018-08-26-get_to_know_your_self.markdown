@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Get to Know Your `Self`"
-date:       2018-08-26 17:23:52 +0000
+title:      "Get to Know Your Self"
+date:       2018-08-26 13:23:53 -0400
 permalink:  get_to_know_your_self
 ---
 
@@ -15,9 +15,11 @@ Here’s a very simple example of `self` referring to a class and `self` referri
 If the method is a message, who is the receiver? The object, or `self`! In this example, `self` is receiving instruction from other parts of the code and applying it to the current object being used in the program. Here’s how:
 
 **`self` referring to an instance of a class**
+
 We first see `self` on line 11 in the `#initialize` method. Here, we are shoveling `self` into the `@@all` class variable. What does this mean? In this part of the program, `self` is referring to the new instance of class that is being created with the `#initialize` method (in this case a new species). As you can see in lines 21-23, we create three new instances of the Animals class. As each instance is created, they are automatically saved into the `@@all` class variable. In other words, instead of having to write: `@@all << tiger`, `@@all << monkey`, `@@all << giraffe` for each instance we want to add the `@@all` class variable, we can write `@@all << self` which will execute this same line of code for any instance of the Animals class.
 
 **`self` referring to a class**
+
 We next see `self` on line 14 in the `#self.all` class method. This is a class method designed to return the value of the `@@all` class variable, which is an array of instances of the Animals class. As you saw above, we created three new instances of the Animals class: tiger, monkey, and giraffe (which are displayed on lines 1-3 of the `pry`). On line 4 of the `pry`, we call the `#self.all` class method on the Animals class by entering `Animals.all`. The program is recognizing that in this case, `self` is referring to the Animals class and returning the expected array of the tiger, monkey, and giraffe instances.
 
 So how does `self` know when to change the object it’s referencing? Two ways:
