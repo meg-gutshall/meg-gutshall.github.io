@@ -31,6 +31,10 @@ h6.powered_by {
   margin-top: 0px;
   color: #008080;
 }
+code {
+  color: #006080;
+  background-color: #CEECED; 
+}
 a {
   color: #a40080;
 }
