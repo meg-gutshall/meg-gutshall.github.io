@@ -7,7 +7,7 @@ permalink:  html_and_css_the_90s_kids_of_programming
 
 After almost two months in the [online full stack web developer program](https://flatironschool.com/programs/online-web-developer-career-course/), I finally feel like I’m getting into the thick of the curriculum at Flatiron. I’ve finished Intro to Ruby Development, learned about Git and [GitHub](https://github.com/meg-gutshall), sped through Procedural Ruby, and am now working on the Object Oriented Ruby section. One section I especially enjoyed though was HTML and CSS Introduction. _Disclaimer: For brevity’s sake, I am going to use acronyms throughout this post. Full phrases and relevant information will be covered at the end of this post._
 
-![HTML & CSS Symbols](https://meghangutshall.com/uploads/1/1/9/5/119558693/images/HTML_CSS.png)
+![HTML & CSS Symbols](https://meghangutshall.com/uploads/1/1/9/5/119558693/images/HTML_CSS-devto.png)
 
 ### __HTML: The Language of the Web__
 HTML is the language of the web, however, it is __not__ a programming language, but rather a _markup_ language. HTML documents are comprised of content (text written in plain English) and markup (HTML tags meant to structure the content). These documents are used by web servers and web browsers to display the non-markup version of the document—a web page—in a process called rendering.
