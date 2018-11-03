@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "BeerSnob Gem Plan"
-date:       2018-10-29 17:50:59 +0000
+date:       2018-10-29 13:51:00 -0400
 permalink:  beersnob_gem_plan
 ---
 
@@ -23,6 +23,9 @@ The users will have the option to redisplay the list of beer style families or, 
 ## Planned Future Updates
 
 The plans for this app were severely simplified from the original due to time constraints. Expected future additions are as follows:
+
+### New File Structure
+I plan on making a `Families` class in an update to make the app more streamlined. The reason I didn't in the first place was because of the way the website I scraped from was structured.
 
 ### New Information
 A-Z characteristics and food pairing suggestions will be added for each beer style along with a style guide detailing the meaning of each A-Z characteristic.
