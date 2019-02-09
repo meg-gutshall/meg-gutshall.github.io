@@ -16,7 +16,7 @@ If the method is a message, who is the receiver? The object, or `self`! In this 
 
 **`self` referring to an instance of a class**
 
-We first see `self` on line 11 in the `#initialize` method. Here, we are shoveling `self` into the `@@all` class variable. What does this mean? In this part of the program, `self` is referring to the new instance of class that is being created with the `#initialize` method (in this case a new species). As you can see in lines 21-23, we create three new instances of the Animals class. As each instance is created, they are automatically saved into the `@@all` class variable. In other words, instead of having to write: `@@all << tiger`, `@@all << monkey`, `@@all << giraffe` for each instance we want to add the `@@all` class variable, we can write `@@all << self` which will execute this same line of code for any instance of the Animals class.
+We first see `self` on line 11 in the `#initialize` method. Here, we are shoveling `self` into the `@@all` class variable. What does this mean? In this part of the program, `self` is referring to the new instance of class that is being created with the `#initialize` method (in this case a new species). As you can see in lines 21-23, we create three new instances of the Animals class. As each instance is created, they are automatically saved into the `@@all` class variable. In other words, instead of having to write: `@@all << tiger`, `@@all << monkey`, `@@all << giraffe` for each instance we want to add to the `@@all` class variable, we can write `@@all << self` which will execute this same line of code for any instance of the Animals class.
 
 **`self` referring to a class**
 
