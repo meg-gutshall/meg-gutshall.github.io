@@ -40,10 +40,6 @@ require 'sinatra/activerecord/rake'
 
 This loads Rake tasks from the `sinatra-activerecord` gem. A custom Rake task is defined on Lines 8-10 which starts a new Pry session.
 
-`ENV["SINATRA_ENV"] ||= "development"`
-`require_relative './config/environment'`
-`require 'sinatra/activerecord/rake'`
-
 ## Environment.rb
 
 Now let’s check out our `config/environment.rb` file.
@@ -76,7 +72,7 @@ ActiveRecord::Base.establish_connection(
 )
 ```
 
-On Lines 6 through 9, we establish our database connection. Our `adapter` is the name of the database management system (typed in all lower-case) that we’re using to hold our data and our `database` is the path to our app’s database. This path includes our deployment environment hash, which is an argument of `Bundle.require` on Line 4 and will change based on our key’s value, pointing to other databases.
+On Lines 6 through 9, we establish our database connection. Our `adapter` sets the name of the database management system (typed in all lower-case) that we’re using to hold our data and our `database` sets the path to our app’s database. This path includes our deployment environment hash, which is an argument of `Bundle.require` on Line 4 and will change based on our key’s value, pointing to other databases.
 
 ### Line 11
 
@@ -85,15 +81,6 @@ require_all 'app'
 ```
 
 This loads all other files nested under `app` to run the program.
-
-`ENV["SINATRA_ENV"] ||= "development"`
-`require 'bundler/setup'`
-`Bundler.require(:default, ENV['SINATRA_ENV'])`
-`ActiveRecord::Base.establish_connection(`
-  `adapter: "sqlite3",`
-  `database: "db/#{ENV[‘SINATRA_ENV’]}.sqlite"`
-`)`
-`require_all 'app'`
 
 ## Config.ru
 
@@ -137,7 +124,7 @@ Dir[File.join(File.dirname(__FILE__), "app/controllers", "*.rb")].collect {|file
 end
 ```
 
-In Lines 9 through 13, we're mounting our controllers nested under `app/controllers`. These classes will also be loaded as Middleware. In this case, they'll be `use OwnersController` and `use PetsController`.
+In Lines 9 through 13, we're mounting our controllers nested under `app/controllers`. These classes will also be loaded as Middleware. In this case, they'll be `use OwnersController` and `use PetsController`. Notice how `"application_controller"` is rejected? That's because it is called on in Line 14 below.
 
 ### Line 14
 
@@ -147,12 +134,10 @@ run ApplicationController
 
 This line creates an instance of our `ApplicationController` class that can respond to requests from a client. We can only `run` one class and the rest are loaded via `use`.
 
-`require './config/environment'`
-`if ActiveRecord::Migrator.needs_migration?`
-  `raise 'Migrations are pending. Run ``rake db:migrate`` to resolve the issue.'`
-`end`
-`use Rack::MethodOverride`
-`Dir[File.join(File.dirname(__FILE__), "app/controllers", "*.rb")].collect {|file| File.basename(file).split(".")[0] }.reject {|file| file == "application_controller" }.each do |file|`
+
+  `raise 'Migrations are pending. Run rake db:migrate to resolve the issue.'`
+
+
  ` string_class_name = file.split('_').collect { |w| w.capitalize }.join`
   `class_name = Object.const_get(string_class_name)`
   `use class_name`
