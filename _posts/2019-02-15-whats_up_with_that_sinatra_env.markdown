@@ -134,16 +134,6 @@ run ApplicationController
 
 This line creates an instance of our `ApplicationController` class that can respond to requests from a client. We can only `run` one class and the rest are loaded via `use`.
 
-
-  `raise 'Migrations are pending. Run rake db:migrate to resolve the issue.'`
-
-
- ` string_class_name = file.split('_').collect { |w| w.capitalize }.join`
-  `class_name = Object.const_get(string_class_name)`
-  `use class_name`
-`end`
-`run ApplicationController`
-
 ## Bringing It All Together
 
 So now we know what happens each time the `Rakefile`, the `config/environment.rb` file, and the `config.ru` file is run. We still have to answer the question as to what `ENV["SINATRA_ENV"]` actually is.
@@ -175,11 +165,6 @@ end
 Lines 8 through 10 check to make sure our migrations have been run. If not, the error message on Line 9 is raised... and now we've come full circle. The app will not function unless we've run our migrations first because we won't have any information to display or manipulate.
 
 The rest of our `spec_helper.rb` file configures the app for testing and then runs our `config.ru` file.
-
-`ENV["SINATRA_ENV"] = "test"`
-`if ActiveRecord::Migrator.needs_migration?`
-  `raise 'Migrations are pending. Run ``rake db:migrate SINATRA_ENV=test`` to resolve the issue.'`
-`end`
 
 ## Shotgun
 
