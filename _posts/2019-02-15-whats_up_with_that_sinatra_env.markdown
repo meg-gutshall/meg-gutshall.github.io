@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "What's Up With That!?: SINATRA_ENV"
-date:       2019-02-15 22:01:15 +0000
+date:       2019-02-15 17:01:16 -0500
 permalink:  whats_up_with_that_sinatra_env
 ---
 
@@ -39,6 +39,10 @@ require 'sinatra/activerecord/rake'
 ```
 
 This loads Rake tasks from the `sinatra-activerecord` gem. A custom Rake task is defined on Lines 8-10 which starts a new Pry session.
+
+`ENV["SINATRA_ENV"] ||= "development"`
+`require_relative './config/environment'`
+`require 'sinatra/activerecord/rake'`
 
 ## Environment.rb
 
@@ -82,6 +86,15 @@ require_all 'app'
 
 This loads all other files nested under `app` to run the program.
 
+`ENV["SINATRA_ENV"] ||= "development"`
+`require 'bundler/setup'`
+`Bundler.require(:default, ENV['SINATRA_ENV'])`
+`ActiveRecord::Base.establish_connection(`
+  `adapter: "sqlite3",`
+  `database: "db/#{ENV[‘SINATRA_ENV’]}.sqlite"`
+`)`
+`require_all 'app'`
+
 ## Config.ru
 
 Lastly, let’s look at our `config.ru` file.
@@ -112,7 +125,7 @@ Lines 3 through 5 check to make sure our migrations have been run. If not, the e
 use Rack::MethodOverride
 ```
 
-`Rack::MethodOverride` is a piece of Sinatra Middleware that intercepts every request run by our application. It will interpret any requests with `name="_method"` by translating the request to whatever is set by the `value` attribute-normally `PATCH` or `DELETE` for purposes in our Sinatra curriculum. This line must be placed in the `config.ru` file above all controllers in which you want access to the Middleware's funtionality.
+`Rack::MethodOverride` is a piece of Sinatra Middleware that intercepts every request run by our application. It will interpret any requests with `name="_method"` by translating the request to whatever is set by the `value` attribute-normally `PATCH` or `DELETE` for purposes in our Sinatra curriculum. This line must be placed in the `config.ru` file above all controllers in which you want access to the Middleware's functionality.
 
 ### Lines 9-13
 
@@ -133,6 +146,18 @@ run ApplicationController
 ```
 
 This line creates an instance of our `ApplicationController` class that can respond to requests from a client. We can only `run` one class and the rest are loaded via `use`.
+
+`require './config/environment'`
+`if ActiveRecord::Migrator.needs_migration?`
+  `raise 'Migrations are pending. Run ``rake db:migrate`` to resolve the issue.'`
+`end`
+`use Rack::MethodOverride`
+`Dir[File.join(File.dirname(__FILE__), "app/controllers", "*.rb")].collect {|file| File.basename(file).split(".")[0] }.reject {|file| file == "application_controller" }.each do |file|`
+ ` string_class_name = file.split('_').collect { |w| w.capitalize }.join`
+  `class_name = Object.const_get(string_class_name)`
+  `use class_name`
+`end`
+`run ApplicationController`
 
 ## Bringing It All Together
 
@@ -165,6 +190,11 @@ end
 Lines 8 through 10 check to make sure our migrations have been run. If not, the error message on Line 9 is raised... and now we've come full circle. The app will not function unless we've run our migrations first because we won't have any information to display or manipulate.
 
 The rest of our `spec_helper.rb` file configures the app for testing and then runs our `config.ru` file.
+
+`ENV["SINATRA_ENV"] = "test"`
+`if ActiveRecord::Migrator.needs_migration?`
+  `raise 'Migrations are pending. Run ``rake db:migrate SINATRA_ENV=test`` to resolve the issue.'`
+`end`
 
 ## Shotgun
 
