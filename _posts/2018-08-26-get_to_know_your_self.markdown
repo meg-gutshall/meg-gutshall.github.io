@@ -45,7 +45,6 @@ In the above example, we see `self` in lines 12, 13, 18, and 22. In which lines 
 You just learned `self`! If you feel you have a good grasp of the concept of `self`, celebrate with a scoop of your favorite ice cream! If not, check out the following helpful resources:
 
 * [Self in Ruby: A Comprehensive Overview](https://airbrake.io/blog/ruby/self-ruby-overview)
-* [Three Golden Rules to Understand Self in Ruby](https://hackhands.com/three-golden-rules-understand-self-ruby/)
 * [Object Scope and Self](http://ruby-for-beginners.rubymonstas.org/writing_classes/self.html)
 
 ...And then have a scoop of ice cream. :D
