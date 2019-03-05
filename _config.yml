@@ -1,15 +1,14 @@
 # Site settings
+author: Meg Gutshall
 title: Feral Code Philly
 header-img: img/home-bg.png
 email: meghan.gutshall@gmail.com
-copyright_name: meg-gutshall
+copyright_name: Meg Gutshall
 description: > # this means to ignore newlines until "baseurl:"
   Thoughts from the wild experience of learning to program
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: meg_gutshall
 github_username:  meg-gutshall
-learn_profile: meg-gutshall
-email_username: meghan.gutshall@gmail.com
 
 # Build settings
 markdown: kramdown
