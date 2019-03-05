@@ -23,7 +23,7 @@ As a linguistics nerd (in case you missed it, there's a great example of my Span
 
 An HTML document consists of two sections: a head and a body. The head is not displayed as part of the web page when the browser renders the HTML document. Instead it contains data (such as page title, a favicon, links to the document’s CSS and JavaScript, and metadata) which relays additional information not contained in the body section to the web browser. A web page’s title and favicon appear in the window tab of the web browser. The CSS link provides styling rules for the HTML document and the JavaScript link enables additional, more complex features. Metadata defines the document’s language, character encoding, author, and description. Adding an accurate description that includes applicable keywords is especially important as it affects the site’s SEO and will determine the frequency with which the web page appears in Internet search results.
 
-The meat of the document, the body, is composed of HTML elements. An HTML element contains an opening tag, a section of content, and a closing tag*. The type of tag used in the element determines the meaning and structure (semantics!) of the enclosed content. Common HTML tags denote links, line breaks, headings, images, lists, paragraphs, and tables. Web browsers read the HTML tags and apply their meaning to the enclosed content when rendering a web page. HTML elements can also accept attributes to transfer more detailed information regarding the enclosed content. It is important to assign HTML tags accurately, not only to structure the web page correctly, but also to enable website accessibility for those who use screen readers and other tools to navigate the web.
+The meat of the document, the body, is composed of HTML elements. An HTML element contains an opening tag, a section of content, and a closing tag**. The type of tag used in the element determines the meaning and structure (semantics!) of the enclosed content. Common HTML tags denote links, line breaks, headings, images, lists, paragraphs, and tables. Web browsers read the HTML tags and apply their meaning to the enclosed content when rendering a web page. HTML elements can also accept attributes to transfer more detailed information regarding the enclosed content. It is important to assign HTML tags accurately, not only to structure the web page correctly, but also to enable website accessibility for those who use screen readers and other tools to navigate the web.
 
 ## CSS: The Beauty to HTML’s Beast
 
@@ -39,18 +39,18 @@ There is so much information available on HTML and CSS as they are fundamental p
 
 ### Index
 
-CSS → Cascading Style Sheets
-DNS → Domain Name Server
-HTML → Hypertext Markup Language
-HTTP → Hypertext Transfer Protocol
-SEO → Search Engine Optimization
-URL → Uniform Resource Locator
+CSS → Cascading Style Sheets<br>
+DNS → Domain Name Server<br>
+HTML → Hypertext Markup Language<br>
+HTTP → Hypertext Transfer Protocol<br>
+SEO → Search Engine Optimization<br>
+URL → Uniform Resource Locator<br>
 
 ### Resources
 
-[Mozilla Development Network](https://developer.mozilla.org/en-US/docs/Learn/HTML)
-[Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/)
-[CSS Tricks](https://css-tricks.com/guides/)
+[Mozilla Development Network](https://developer.mozilla.org/en-US/docs/Learn/HTML)<br>
+[Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/)<br>
+[CSS Tricks](https://css-tricks.com/guides/)<br>
 [W3Schools](https://www.w3schools.com/)
 
-_*Not all HTML elements require a closing tag (such as `img`, `input`, `br`, `hr`, `meta`, and a few others), but that's a topic for another blog post. When in doubt, use a closing tag._
+Not all HTML elements require a closing tag (such as `img`, `input`, `br`, `hr`, `meta`, and a few others), but that's a topic for another blog post. When in doubt, use a closing tag.
