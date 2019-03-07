@@ -2,6 +2,7 @@
 layout: post
 title:      "Creating BeerSnob"
 date:       2018-10-29 13:49:46 -0400
+permalink:  creating_beersnob
 excerpt_separator: <!--more-->
 ---
 

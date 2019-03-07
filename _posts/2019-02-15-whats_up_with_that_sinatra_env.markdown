@@ -2,6 +2,7 @@
 layout: post
 title:      "What's Up With That!?: SINATRA_ENV"
 date:       2019-02-15 17:01:16 -0500
+permalink:  whats_up_with_that_sinatra_env
 ---
 
 If you’re in the Sinatra ActiveRecord section of the Flatiron School, you’ve probably seen this error message a few times: “Migrations are pending. Run `rake db:migrate SINATRA_ENV=test` to resolve the issue.” Well we know we need to run `rake db:migrate` to create our migration tables, but `SINATRA_ENV`... what’s up with that!?
