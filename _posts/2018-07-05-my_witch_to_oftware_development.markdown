@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "My $witch to $oftware Development"
+title:      "My Switch to Software Development"
 date:       2018-07-05 09:39:05 -0400
 permalink:  my_witch_to_oftware_development
 ---
