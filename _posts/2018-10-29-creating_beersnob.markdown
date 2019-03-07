@@ -3,12 +3,8 @@ layout: post
 title:      "Creating BeerSnob"
 date:       2018-10-29 13:49:46 -0400
 permalink:  creating_beersnob.html
-excerpt_separator: <!--more-->
+excerpt:    Read through the process of how I created my first project at Flatiron where app users can choose from a predefined list to learn about different beer styles and their characteristics. I detail the steps I took to set up the project, the function of each program file, and some struggles I ran into along the way.
 ---
-
-Read through the process of how I created my first project at Flatiron where app users can choose from a predefined list to learn about different beer styles and their characteristics. I detail the steps I took to set up the project, the function of each program file, and some struggles I ran into along the way.
-
-<!--more-->
 
 ## Project Idea
 
