@@ -13,7 +13,7 @@ layout: page
         </h3>
         {% endif %}
     </a>
-    {{ post.excerpt }}
+    {{ post.excerpt | strip_html | truncatewords:75 }}
     <p class="post-meta">Posted by {% if site.author %}{{ site.author }}{% else %}{{ site.github_username }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
 </div>
 <hr>
