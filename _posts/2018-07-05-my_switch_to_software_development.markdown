@@ -1,8 +1,8 @@
 ---
 layout: post
-title:      "My Switch to Software Development"
+title:      "My $witch to $oftware Development"
 date:       2018-07-05 09:39:05 -0400
-permalink:  my_witch_to_oftware_development
+permalink:  my_switch_to_software_development
 ---
 
 In late 2017 I was working as technical coordinator and marketing lead for a small IT consulting firm outside of Philadelphia, my first ever position in the tech industry. Since I knew absolutely nothing about the industry, I decided to do my own research and immerse myself in the latest news and best practices. I read books and articles on different technologies and programming languages, I attended numerous networking events in the city, and I even enrolled in a computer science class through my local community college. I was never afraid to ask questions and suggest implementing new concepts at the firm, but my boss never seemed to recognize my efforts and in fact discouraged my actions, citing that it wasn’t part of my job description. After over a year and a half of dedication to the company, I began to realize that ideas we had discussed at the interview were never going to come to fruition and, frankly, I was feeling extremely underappreciated in my role. It seemed to me that the position I had so much wanted to become a career was not working out.
