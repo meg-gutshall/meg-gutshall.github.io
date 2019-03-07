@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Creating the BeerSnob Gem"
-date:       2018-10-29 17:49:45 +0000
+title:      "Creating BeerSnob"
+date:       2018-10-29 13:49:46 -0400
 permalink:  creating_the_beersnob_gem
 ---
 
@@ -18,7 +18,8 @@ I experienced quite a few delays in starting this project, each one pretty frust
 
 ### Setup - Creating a Gem with Bundler
 
-I installed and used bundler to set up my gem, taking the following steps: 
+I installed and used bundler to set up my gem, taking the following steps
+
 1. Open the terminal and `cd` into the folder in which you want to create your gem (mine is called `code`).
 2. Type in `bundle gem` then your gem name. (Use an underscore instead of a hyphen to make your gem name camel case.) Decide whether you want to use `rspec`, `minitest`, or neither for development testing, use the MIT license for open sourcing regulation, and a code of conduct for any open source contributors to follow. Bundler then initializes a git repo for your gem!
 
