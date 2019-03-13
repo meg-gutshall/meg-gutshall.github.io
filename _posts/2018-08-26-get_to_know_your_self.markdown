@@ -3,8 +3,8 @@ layout: post
 title:      "Get to Know Your Self"
 date:       2018-08-26 13:23:53 -0400
 permalink:  get_to_know_your_self
+excerpt:    <p>While Ruby is an incredibly user-friendly language, it’s not without its conundrums&mdash;one in particular being <code>self</code>. <code>self</code> is a Ruby keyword that can be scoped to any instance or class. This enables developers to contextually reference a particular instance or class&mdash;depending on what the needs are for their program&mdash;without using a specific variable name. It's not hard to see how this could quickly get confusing. Read on to walk through some simple examples and gain a better understanding of the concept of <code>self</code>.</p>
 ---
-
 
 While Ruby is an incredibly user-friendly language, it’s not without its conundrums—one in particular: `self`. `self` is a Ruby keyword, or a word specifically designed to have a special meaning in the Ruby language. The scope (or program visibility) of `self` is any class or instance of a class (also called objects). This means that `self` can enable developers to contextually reference a particular class or instance of a class—depending on what the needs are for their program—without using a specific variable name.
 
@@ -16,11 +16,11 @@ If the method is a message, who is the receiver? The object, or `self`! In this 
 
 **`self` referring to an instance of a class**
 
-We first see `self` on line 11 in the `#initialize` method. Here, we are shoveling `self` into the `@@all` class variable. What does this mean? In this part of the program, `self` is referring to the new instance of class that is being created with the `#initialize` method (in this case a new species). As you can see in lines 21-23, we create three new instances of the Animals class. As each instance is created, they are automatically saved into the `@@all` class variable. In other words, instead of having to write: `@@all << tiger`, `@@all << monkey`, `@@all << giraffe` for each instance we want to add to the `@@all` class variable, we can write `@@all << self` which will execute this same line of code for any instance of the Animals class.
+We first see `self` on line 11 in the `#initialize` method. Here, we are shoveling `self` into the `@@all` class variable. What does this mean? In this part of the program, `self` is referring to the new instance of class that is being created with the `#initialize` method (in this case a new species). As you can see in lines 21&ndash;23, we create three new instances of the Animals class. As each instance is created, they are automatically saved into the `@@all` class variable. In other words, instead of having to write: `@@all << tiger`, `@@all << monkey`, `@@all << giraffe` for each instance we want to add to the `@@all` class variable, we can write `@@all << self` which will execute this same line of code for any instance of the Animals class.
 
 **`self` referring to a class**
 
-We next see `self` on line 14 in the `#self.all` class method. This is a class method designed to return the value of the `@@all` class variable, which is an array of instances of the Animals class. As you saw above, we created three new instances of the Animals class: tiger, monkey, and giraffe (which are displayed on lines 1-3 of the `pry`). On line 4 of the `pry`, we call the `#self.all` class method on the Animals class by entering `Animals.all`. The program is recognizing that in this case, `self` is referring to the Animals class and returning the expected array of the tiger, monkey, and giraffe instances.
+We next see `self` on line 14 in the `#self.all` class method. This is a class method designed to return the value of the `@@all` class variable, which is an array of instances of the Animals class. As you saw above, we created three new instances of the Animals class: tiger, monkey, and giraffe (which are displayed on lines 1&ndash;3 of the `pry`). On line 4 of the `pry`, we call the `#self.all` class method on the Animals class by entering `Animals.all`. The program is recognizing that in this case, `self` is referring to the Animals class and returning the expected array of the tiger, monkey, and giraffe instances.
 
 So how does `self` know when to change the object it’s referencing? Two ways:
 1. The first being context as we have previous discussed above.
@@ -40,7 +40,7 @@ Lastly, the `#self.all_flavors` class method iterates over the creameries in the
 
 After defining the Creameries class, we create three new creameries: bnj, hersheys, and nelsons.
 
-In the above example, we see `self` in lines 12, 13, 18, and 22. In which lines is `self` referring to an instance of the class? Lines 12 , 13, and 18. In lines 12 and 18, we’re adding an ice cream flavor to the `@flavors` instance variable of a creamery, which you can see in lines 1-3 of the `pry`. In line 13, we’re adding the creamery itself to the `@@all` class variable (since it’s an instance of the Creameries class). In line 22, `self` is referring to the Creameries class by calling the `#self.all_flavors` class method. This method uses the `@@all` class variable to `puts` all of the ice cream flavors in the Creameries class and return an array of Creameries instances.
+In the above example, we see `self` in lines 12, 13, 18, and 22. In which lines is `self` referring to an instance of the class? Lines 12 , 13, and 18. In lines 12 and 18, we’re adding an ice cream flavor to the `@flavors` instance variable of a creamery, which you can see in lines 1&ndash;3 of the `pry`. In line 13, we’re adding the creamery itself to the `@@all` class variable (since it’s an instance of the Creameries class). In line 22, `self` is referring to the Creameries class by calling the `#self.all_flavors` class method. This method uses the `@@all` class variable to `puts` all of the ice cream flavors in the Creameries class and return an array of Creameries instances.
 
 You just learned `self`! If you feel you have a good grasp of the concept of `self`, celebrate with a scoop of your favorite ice cream! If not, check out the following helpful resources:
 
