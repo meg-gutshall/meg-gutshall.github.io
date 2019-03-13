@@ -4,6 +4,7 @@ title:      "Creating Rxeactions"
 date:       2019-03-12 16:58:52 -0400
 permalink:  creating_rxeactions
 excerpt:    Read through the process of how I created my second project at Flatiron where app users can privately track medications they’ve been prescribed as well as side effects, thoughts, and feelings associated with those medications. I share where the idea for this project came from and how I got started with setting up the project. Then, I get into the build, breaking it down by the MVC (Model View Controller) file structure. To end the post, I touch on styling a little bit, I share some troubleshooting issues that I experienced and I wrap up with expansion features I hope to add on in the future.
+
 ---
 
 ## Project Idea
