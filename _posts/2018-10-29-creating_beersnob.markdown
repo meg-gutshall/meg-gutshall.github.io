@@ -4,27 +4,26 @@ title:      "Creating BeerSnob"
 date:       2018-10-29 13:49:46 -0400
 permalink:  creating_beersnob
 excerpt:    Read through the process of how I created my first project at Flatiron where app users can choose from a predefined list to learn about different beer styles and their characteristics. I detail the steps I took to set up the project, the function of each program file, and some struggles I ran into along the way.
-
 ---
 
 ## Project Idea
 
 I had a few ideas that I was considering for this project at first. I tossed around the idea of scraping through each year in the '90s and highlighting different trends, fads, pop culture, and new stories. I also considered scraping through popular songs and returning the original songs that the new song took samples from. That came closest to fruition but unfortunately I couldn't find a website conducive to this idea. I added it to my list of future projects. :)
 
-I wanted my first project to be something useful–not just a throw-away program that I’d never touch after submission. I examined my interests and found that I could create an app at the intersection of beer and education. I found craftbeer.com to be a viable website for scraping and thus BeerSnob was born.
+I wanted my first project to be something useful&mdash;not just a throw-away program that I’d never touch after submission. I examined my interests and found that I could create an app at the intersection of beer and education. I found craftbeer.com to be a viable website for scraping and thus BeerSnob was born.
 
 ## Starting the Project
 
 I experienced quite a few delays in starting this project, each one pretty frustrating. I used the Visual Studio Code text editor in place of the Learn IDE and had several issues with setup that I had to solve–either through Google, message boards, or speaking with other developers and students. After fixing the settings to allow me to submit commit messages with titles and description (which is a coding habit I want to ingrain upon myself from the start) and then installing rvm to manage my rubies and gems, I was ready to dive in and begin coding my project.
 
-### Setup - Creating a Gem with Bundler
+### Setup: Creating a Gem with Bundler
 
 I installed and used bundler to set up my gem, taking the following steps
 
 1. Open the terminal and `cd` into the folder in which you want to create your gem (mine is called `code`).
 2. Type in `bundle gem` then your gem name. (Use an underscore instead of a hyphen to make your gem name camel case.) Decide whether you want to use `rspec`, `minitest`, or neither for development testing, use the MIT license for open sourcing regulation, and a code of conduct for any open source contributors to follow. Bundler then initializes a git repo for your gem!
 
-### Setup - Connecting Your Gem to GitHub
+### Setup: Connecting Your Gem to GitHub
 
 1. `cd` into your newly created gem folder and navigate to GitHub. Create a new repository with the same name as your gem. Type `git add .` into your terminal, then enter the last three lines in the "create a new repository on the command line" option displayed on the new page loaded in GitHub for your gem repository.
 2. Refresh your GitHub page and you'll see your gem and its files now in your GitHub repository.
@@ -32,7 +31,7 @@ I installed and used bundler to set up my gem, taking the following steps
 4. Your new gem's repo folder should appear in your local `code` folder. Open your text editor of choice and `cd` into the gem folder to start working.
 _Hint:_ To test your text editor's connectivity to GitHub, make a change to your `README.md` file and save. In the terminal, type `git add .`, `git commit -m "Modify README.md"`, and `git push`. When you refresh your GitHub page, you should see the updated commit message and two commits.
 
-### Setup - The Executable File
+### Setup: The Executable File
 
 1. Add your executable file (the file that makes the app run) in the `bin` folder. I named mine `beer-snob`. (Remember to add the shebang line `#!/usr/bin/env ruby` at the top of your file so your computer knows to use ruby to run the program.)
 2. We want the user to be able to run the app right out of the terminal using bash instead of explicitly calling on a ruby interpreter to run it. This means we have to change the executable file's permissions. We can do this by `cd`ing into the `bin` folder and entering `chmod +x` followed by the executable file's name.
