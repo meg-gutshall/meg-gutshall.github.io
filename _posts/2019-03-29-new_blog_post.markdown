@@ -1,8 +1,9 @@
 ---
 layout: post
-title:      "New Blog Post"
+title:      "Slipsum L. Jackson Blog Post"
 date:       2019-03-29 14:25:36 +0000
-permalink:  new_blog_post
+permalink:  slipsum_l_jackson_blog_post
+excerpt:    <p>Created this post while recording a Code Talk video!</p>
 ---
 
 
