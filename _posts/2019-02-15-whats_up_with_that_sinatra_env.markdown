@@ -14,7 +14,7 @@ First let’s go over a few files line by line so we can follow `ENV["SINATRA_EN
 
 `"SINATRA_ENV"` is the key to Ruby's `ENV` hash and defines your deployment environment. This is set in your `Rakefile`, where the app's rake tasks are defined.
 
-![Picture of Rakefile](https://meghangutshall.com/uploads/new/complex-forms-rakefile.jpg)
+![Picture of Rakefile](/img/post-images/complex-forms-rakefile.jpg)
 
 ### Line 1
 
@@ -44,7 +44,7 @@ This loads Rake tasks from the `sinatra-activerecord` gem. A custom Rake task is
 
 Now let’s check out our `config/environment.rb` file, where we load all of the app's dependencies, from gems to database connections.
 
-![Picture of environment.rb](https://meghangutshall.com/uploads/new/complex-forms-environment.jpg)
+![Picture of environment.rb](/img/post-images/complex-forms-environment.jpg)
 
 ### Line 1
 
@@ -86,7 +86,7 @@ This loads all other files nested under `app` to run the program.
 
 Lastly, let’s look at our `config.ru` file, which details to Rack the environment requirements of the app and then runs the app.
 
-![Picture of config.ru](https://meghangutshall.com/uploads/new/complex-forms-config.jpg)
+![Picture of config.ru](/img/post-images/complex-forms-config.jpg)
 
 ### Line 1
 
@@ -142,7 +142,7 @@ So now we know what happens each time the `Rakefile`, the `config/environment.rb
 
 When we run `learn` to test our app, this triggers the gem `rspec` which will run our `spec_helper.rb` file.
 
-![Picture of spec_helper.rb](https://meghangutshall.com/uploads/new/complex-forms-spec-helper.jpg)
+![Picture of spec_helper.rb](/img/post-images/complex-forms-spec-helper.jpg)
 
 ### Line 1
 
