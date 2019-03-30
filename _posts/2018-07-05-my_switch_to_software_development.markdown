@@ -10,7 +10,7 @@ In late 2017 I was working as technical coordinator and marketing lead for a sma
 
 As part of my job, I was in charge of onboarding new consultants and running payroll which meant I had intimate knowledge of everyone’s salary details and how many years of work experience it took for them to get there. This insight, combined with networking events in which I met many women who had transitioned into the tech industry, sparked an idea in my brain and got me thinking, ‘Why can’t I do this too?’
 
-![Cash](https://github.com/meg-gutshall/meg-gutshall.github.io/blob/master/img/post-images/cash.jpg)
+![Cash](/img/post-images/cash.jpg)
 
 Okay, so the title of my blog post may be a little misleading. The wages, benefits, and job perks that I encountered with the consultants at the recruiting firm definitely caught my eye, but after the first time I manipulated HTML code and saw tangible changes reflect on a website… you could say I fell in love.
 
