@@ -92,3 +92,6 @@ I didn't have to change anything for the “Commercial Examples” characteristi
 
 Even after making the above changes I still ran into issues. When writing the `#initialize` method in the `Beers` class, I employed the `#send` method in order to create the object’s attributes from the key/value pairs. However, since the keys were Strings and not Symbols, I wasn’t able to convert the pairs to attributes using the `#send` method. I could probably figure out a way to do it if I researched it more but I decided to eliminate these characteristics altogether and readdress the problem at a later date.
 
+## Project Demo Video
+
+<iframe width="100%" frameborder="0" src="https://www.youtube.com/embed/m-sAVQi9MQo" allowfullscreen></iframe>
