@@ -42,10 +42,6 @@ After defining the Creameries class, we create three new creameries: bnj, hershe
 
 In the above example, we see `self` in lines 12, 13, 18, and 22. In which lines is `self` referring to an instance of the class? Lines 12 , 13, and 18. In lines 12 and 18, we’re adding an ice cream flavor to the `@flavors` instance variable of a creamery, which you can see in lines 1&ndash;3 of the `pry`. In line 13, we’re adding the creamery itself to the `@@all` class variable (since it’s an instance of the Creameries class). In line 22, `self` is referring to the Creameries class by calling the `#self.all_flavors` class method. This method uses the `@@all` class variable to `puts` all of the ice cream flavors in the Creameries class and return an array of Creameries instances.
 
-You just learned `self`! If you feel you have a good grasp of the concept of `self`, celebrate with a scoop of your favorite ice cream! If not, check out the following helpful resources:
-
-* [Self in Ruby: A Comprehensive Overview](https://airbrake.io/blog/ruby/self-ruby-overview)
-* [Object Scope and Self](http://ruby-for-beginners.rubymonstas.org/writing_classes/self.html)
+You just learned `self`! If you feel you have a good grasp of the concept of `self`, celebrate with a scoop of your favorite ice cream! If not, check out the following helpful resource: [Self in Ruby: A Comprehensive Overview](https://airbrake.io/blog/ruby/self-ruby-overview)
 
 ...And then have a scoop of ice cream. :D
-
