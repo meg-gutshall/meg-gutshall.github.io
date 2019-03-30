@@ -157,3 +157,7 @@ I would like to add an alarm feature to remind people to take their medication a
 ### Overall Reactions
 
 I'm thinking about how I could implement a text analyzer to comb the titles and content of the reactions for each medication and give an overall rating for the medication based on the user's recorded reactions. It would decide if the medication was mostly helpful to the user, mostly harmful to the user, or maybe neither and display this analysis on the medication's details page.
+
+## Project Demo Video
+
+<iframe width="100%" frameborder="0" src="https://www.youtube.com/embed/xRKItzdbQwk" allowfullscreen></iframe>
