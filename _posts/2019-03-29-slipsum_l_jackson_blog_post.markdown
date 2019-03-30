@@ -8,7 +8,7 @@ excerpt:    <p>I created this post as part of a demonstration while recording a 
 
 I created this blog post as part of a demonstration in a recent Code Talk session I recorded about the Flatiron student blogs. Feel free to check out the video below and [view the session notes here](http://bit.ly/code-talk-flatiron-blog).
 
-<div style="text-align: center;">[![Code Talk: Flatiron Blog](https://img.youtube.com/vi/Hvq6u0CW6R0/0.jpg)](https://youtu.be/Hvq6u0CW6R0)</div>
+<div style="text-align: center;"><iframe width="100%" frameborder="0" src="https://youtu.be/Hvq6u0CW6R0" allowfullscreen></iframe></div>
 
 I know this post is full of bad words. It's actually a bunch of monologues given by one of my favorite actors, Samuel L. Jackson. I found this awesome tool called [Samuel L. Ipsum](https://slipsum.com/) that will generate "motherfucking placeholder text motherfucker". If this isn't for you, search "Lorem Ipsum" generators and I'm sure you'll be able to find something to your liking, perhaps [Cat Ipsum](http://www.catipsum.com/index.php#.XJ7RhutKhTa) so you can "litter your copy with more kitty"? :)
 
