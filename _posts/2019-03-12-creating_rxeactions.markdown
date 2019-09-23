@@ -1,9 +1,11 @@
 ---
 layout: post
-title:      "Creating Rxeactions"
-date:       2019-03-12 16:58:52 -0400
-permalink:  creating_rxeactions
-excerpt:    <p>Read through the process of how I created my second project at Flatiron where app users can privately track medications they’ve been prescribed as well as side effects, thoughts, and feelings associated with those medications. I share where the idea for this project came from and how I got started with setting up the project. Then, I get into the build, breaking it down by the MVC (Model View Controller) file structure. To end the post, I touch on styling a little bit, I share some troubleshooting issues that I experienced and I wrap up with expansion features I hope to add on in the future.</p>
+title: "Creating Rxeactions"
+date: 2019-03-12 16:58:52 -0400
+permalink: creating-rxeactions
+categories: [Flatiron School, portfolio projects]
+tags: [software engineering, Sinatra, projects]
+excerpt: <p>Read through the process of how I created my second project at Flatiron where app users can privately track medications they’ve been prescribed as well as side effects, thoughts, and feelings associated with those medications. I share where the idea for this project came from and how I got started with setting up the project. Then, I get into the build, breaking it down by the MVC (Model View Controller) file structure. To end the post, I touch on styling a little bit, I share some troubleshooting issues that I experienced and I wrap up with expansion features I hope to add on in the future.</p>
 ---
 
 ## Project Idea
@@ -18,7 +20,7 @@ I really wish I would have had the foresight at the time to write down my prescr
 
 ### Delay
 
-I had a really difficult time starting this project. I think it was a combination of a few things. The last three labs in Flatiron's Sinatra section of the curriculum&mdash;[Playlister](https://github.com/meg-gutshall/playlister-sinatra-v-000), [NYC Landmarks](https://github.com/meg-gutshall/nyc-sinatra-v-000), and [Fwitter](https://github.com/meg-gutshall/sinatra-fwitter-group-project-v-000)&mdash;were just _ridiculously_ hard. I got totally burnt out from them so by the time I finished those I was mentally exhausted. Also after I finished Fwitter, I didn't get an email from the project lead for another four days! When I asked him about it, he told me about the process the project leads have to go through to see which students are at the project and it's just really jacked up. Flatiron School's logistics and operations department needs to get their shit together. They're churning out these excellent programmers–why are they not having them build out solutions for their own use as well? It just doesn't make any sense to me why they are using sub-par third-party tools when former students can make them exactly what they need. Okay, rant over.
+I had a really difficult time starting this project. I think it was a combination of a few things. The last three labs in Flatiron's Sinatra section of the curriculum-[Playlister](https://github.com/meg-gutshall/playlister-sinatra-v-000), [NYC Landmarks](https://github.com/meg-gutshall/nyc-sinatra-v-000), and [Fwitter](https://github.com/meg-gutshall/sinatra-fwitter-group-project-v-000)-were just _ridiculously_ hard. I got totally burnt out from them so by the time I finished those I was mentally exhausted. Also after I finished Fwitter, I didn't get an email from the project lead for another four days! When I asked him about it, he told me about the process the project leads have to go through to see which students are at the project and it's just really jacked up. Flatiron School's logistics and operations department needs to get their shit together. They're churning out these excellent programmers–why are they not having them build out solutions for their own use as well? It just doesn't make any sense to me why they are using sub-par third-party tools when former students can make them exactly what they need. Okay, rant over.
 
 ### Design
 
@@ -34,9 +36,9 @@ For more detailed information on the aforementioned files and how they interact,
 
 ### Corneal
 
-I used the [`Corneal` gem](https://github.com/thebrianemory/corneal) to build out the skeleton of my project. It was so helpful, and no wonder&mdash;it was build by a previous Flatiron student!
+I used the [`Corneal` gem](https://github.com/thebrianemory/corneal) to build out the skeleton of my project. It was so helpful, and no wonder-it was build by a previous Flatiron student!
 
-## The Build: Models
+## The Build - Models
 
 ### Migrations
 
@@ -48,9 +50,9 @@ I built out three models: `User`, `Medication`, and `Reaction`. I set up my asso
 
 In addition, the `Medication` model contains two methods: one that defines the medication's `slug` attribute and one that will find a medication by its `slug`.
 
-#### ActiveRecord Validations
+#### Active Record Validations
 
-I added validations to my models as well using ActiveRecord's built-in validation helper methods. Model-level validations are the best way to ensure that only **valid data** is persisted because they are database-agnostic, cannot be bypassed by end users, and are convenient to test and maintain. I learned a LOT about ActiveRecord [validations](https://guides.rubyonrails.org/active_record_validations.html) and [associations](https://guides.rubyonrails.org/association_basics.html) by reading through the online documentation. I feel like I have a much better grasp of those concepts now and will be more prepared for the Rails curriculum.
+I added validations to my models as well using Active Record's built-in validation helper methods. Model-level validations are the best way to ensure that only **valid data** is persisted because they are database-agnostic, cannot be bypassed by end users, and are convenient to test and maintain. I learned a LOT about Active Record [validations](https://guides.rubyonrails.org/active_record_validations.html) and [associations](https://guides.rubyonrails.org/association_basics.html) by reading through the online documentation. I feel like I have a much better grasp of those concepts now and will be more prepared for the Rails curriculum.
 
 For the `User` model, I validated the `presence` of the user's required attributes as well as the `length` of their password and the `uniqueness` of their email address to prevent duplicate accounts from being created. I specified to the model to only check for `uniqueness` on creation because when a user tries to log in I don't want an error message saying that the email is already associated with an account because, duh it's the user's account! For the `Medication` model, I validated the `presence` of the medication's required attributes (one of which is boolean so I had to use different options for this validation). For the `Reaction` model, I validated the `presence` of the reaction's required attributes.
 
@@ -60,7 +62,7 @@ I created three different seed files (one for each model) and saved them under `
 
 In the first line of each seed file, I destroyed any information in the database pertaining to that file's model so I would be sure that my seeds would be persisting into a clean database. Then, I used the `.create!` method and entered my own invented data for each attribute. For the medications seeds, I repeated the above process and also assigned `created_at`, `updated_at`, and `user_id` attributes so I could associate the medication to a user upon instantiation. For the reactions seeds, I did the same but instead assigned `created_at` and `medication_id` attributes so I could associate the reaction to a medication upon instantiation.
 
-## The Build: Controllers
+## The Build - Controllers
 
 The controllers are where the application configurations, routes, and controller actions are implemented. They handle all incoming requests to the app, and send back the appropriate responses to the client through the use of routes and the MVC file structure. I ended up with a total of five controllers for my app. In addition to a controller for each model, I also have a `SessionsController` and an `ApplicationController` which all of my app's other controllers use as an inheritance point.
 
@@ -78,7 +80,7 @@ The `SessionsController` is responsible for maintaining the user's session while
 
 ### Users Controller
 
-The `UsersController` handles all HTTP requests that call on the `User` model object. The post users route accepts information from the signup form. If the input is valid, a new user is then created based on that input and the user is logged in and redirected to their dashboard. If not, they're returned to the signup form with an error message corresponding to the invalid input. This controller also has routes to render the user dashboard page, edit the user's information, and save those edits if they are valid. In addition, the `UsersController` has its own helper method that relies on `current_user`, one of the helper methods in `ApplicationController`&mdash;a great example of the magic of inheritance at work!
+The `UsersController` handles all HTTP requests that call on the `User` model object. The post users route accepts information from the signup form. If the input is valid, a new user is then created based on that input and the user is logged in and redirected to their dashboard. If not, they're returned to the signup form with an error message corresponding to the invalid input. This controller also has routes to render the user dashboard page, edit the user's information, and save those edits if they are valid. In addition, the `UsersController` has its own helper method that relies on `current_user`, one of the helper methods in `ApplicationController`-a great example of the magic of inheritance at work!
 
 ### Medications Controller
 
@@ -88,7 +90,7 @@ The `MedicationsController` uses RESTful routes. This means that when the contro
 
 The `ReactionsController` is much like the `MedicationsController` except it employs the use of nested URLs.
 
-## The Build: Views
+## The Build - Views
 
 For my `layout.rb` file, I used a navbar in my header and added conditional statements as to which links I want displayed when the user is not logged in. I also used erb interpolation to create a `@title` instance variable which I set on each view page, enabling the page's title to change dynamically as the user navigates through the app.
 
@@ -134,7 +136,7 @@ If you don't know by now, you gon learn today... I LOVE HTML AND CSS!!! So I pro
 
 I had a hard time with the dates in the project. I didn't want to use the typical `yyyy-mm-dd` format for medication start and end dates because most people don't remember a specific day they started or stopped taking a medication so instead I went with `yyyy-mm`. However, Ruby did not like that at all. HTML5 allows for forms with input type `month` but Ruby will not persist the `yyyy-mm` format as a date so I appended `"-01"` on to the end of the date `params` to act as `-dd` and let Ruby persist the data. When I needed to populate the form fields for the edit forms or show the dates on any view pages, I just used the `#strftime` method to convert them back and it worked like a charm.
 
-I had issues with the `session.user_id` not persisting as I browsed through different pages of my app. I tried to use some different gems to set a secure `session_secret` but it seemed that the only thing that would work was a plain old string. I read through the Sinatra documentation (in addition to countless other resources) but I just couldn't get the `Sysrandom` gem to work and I had wasted enough time on it already.
+I had issues with the `session.user_id` not persisting as I browsed through different pages of my app. I tried to use some different gems to set a secure `session_secret` but it seemed that the only thing that would work was a plain old string. I read through the Sinatra documentation (in addition to countless other resources) but I just couldn't get the sysrandom gem to work and I had wasted enough time on it already.
 
 My biggest issue was associating the user's reaction with the correct medication. I didn't want the user to have to pick from a drop down list of their medications whenever they wanted to record a new reaction because I wanted my app to be more intuitive than that (considering the new reaction form is located on the medication's detail page). I came up with a viable solution by creating a `session.med_id` that would change depending on the last medication detail page the user visited and using the `session.med_id` to set the new reaction's `medication_id` attribute. However, another student suggested I use nested routing and that turned out to be a cleaner, much more straightforward solution to my problem. Plus, by implementing nested routes, I was able to get rid of a lot of unnecessary code that was junking up my app.
 
@@ -152,7 +154,7 @@ It would make much more sense to make a `Prescription` model that holds the deta
 
 ### Medication Information
 
-I would like to add an alarm feature to remind people to take their medication and then have a box for them to check off when they actually take it so they don't forget if they did or not. If the app could track the quantity of the medication the user has compared with the dosage amount and usage instructions, it would be able to send the user a reminder when they need to order a refill&mdash;or even send a reminder to the pharmacy or prescribing doctor. It would also be beneficial to the users if they could access verified medical advice about their specific medications right from the medication details page. I'd really like to be able to add the capability for an alert to appear on the user's dashboard when they list two medications as `current` that have been shown to present negative interactions with each other. Or possibly an alert for common or dangerous side effects when a user adds a new medication.
+I would like to add an alarm feature to remind people to take their medication and then have a box for them to check off when they actually take it so they don't forget if they did or not. If the app could track the quantity of the medication the user has compared with the dosage amount and usage instructions, it would be able to send the user a reminder when they need to order a refill-or even send a reminder to the pharmacy or prescribing doctor. It would also be beneficial to the users if they could access verified medical advice about their specific medications right from the medication details page. I'd really like to be able to add the capability for an alert to appear on the user's dashboard when they list two medications as `current` that have been shown to present negative interactions with each other. Or possibly an alert for common or dangerous side effects when a user adds a new medication.
 
 ### Overall Reactions
 

@@ -1,9 +1,11 @@
 ---
 layout: post
-title:      "Slipsum L. Jackson Blog Post"
-date:       2019-03-29 14:25:36 +0000
-permalink:  slipsum_l_jackson_blog_post
-excerpt:    <p>I created this post as part of a demonstration while recording a Code Talk video! Find great resources on blogging, GitHub Pages, Jekyll, and Lorem Ipsum generators here.</p>
+title: "Slipsum L. Jackson Blog Post"
+date: 2019-03-29 14:25:36 +0000
+permalink: slipsum-l-jackson-blog-post
+categories: [Flatiron School, Code Talk]
+tags: [software engineering, code talks, Jekyll, GitHub pages, blogging, Lorem Ipsum]
+excerpt: <p>I created this post as part of a demonstration while recording a Code Talk video! Find great resources on blogging, GitHub Pages, Jekyll, and Lorem Ipsum generators here.</p>
 ---
 
 I created this blog post as part of a demonstration in a recent Code Talk session I recorded about the Flatiron student blogs. Feel free to check out the video below and [view the session notes here](http://bit.ly/code-talk-flatiron-blog).
