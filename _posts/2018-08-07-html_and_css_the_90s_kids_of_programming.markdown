@@ -13,7 +13,7 @@ _For brevity’s sake, I am going to use acronyms throughout this post. Full phr
 
 After almost two months in the [online software engineering program](https://flatironschool.com/career-courses/coding-bootcamp/online/), I finally feel like I’m getting into the thick of the curriculum at Flatiron. I’ve finished Intro to Ruby Development, learned about Git and [GitHub](https://github.com/meg-gutshall), sped through Procedural Ruby, and am now working on the Object Oriented Ruby section. One section I especially enjoyed though was HTML and CSS Introduction.
 
-![HTML & CSS Symbols](https://github.com/meg-gutshall/meg-gutshall.github.io/blob/master/img/post-images/html-css.png)
+![HTML & CSS Symbols](/img/post-images/html-css.png)
 
 ## HTML: The Language of the Web
 

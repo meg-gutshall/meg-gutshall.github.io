@@ -25,7 +25,7 @@ If you’re a programmer, I’m sure you’ve been through this at least once be
 
 Luckily, Flatiron’s platform Learn.co lets you chat live with a technical coach when you get stuck on something—which I probably should have utilized about 30-40 minutes into my struggle instead of driving myself completely insane. I was connected with technical coach James (shout out to James!) and we got to work. He seemed a bit confused because everything looked okay to him, so we tried a few small tweaks at a time to see if we could get the code to pass. In the end, we discovered that I was returning `false` at the wrong part of the program. If you return `false` inside an iteration, the method only accepts the first object in your array and ends before iterating through the rest of the objects. In other words, not good.
 
-![Screen shot of side-by-side code](https://github.com/meg-gutshall/meg-gutshall.github.io/blob/master/img/post-images/return-false.jpg)
+![Screen shot of side-by-side code](/img/post-images/return-false.jpg)
 
 Ugh!! After all of that confusion, hard work, and frustration, the end result was switching just two lines to get the program to pass the test. Two lines! That’s it! I laughed at myself, thanked James profusely, and was able to code out the rest of the program on my own to complete the Tic Tac Toe Game Status lab. Again (over a well-deserved beer), I thought to myself: ‘Have patience. You’ll get this down soon.’
 
