@@ -16,7 +16,7 @@ code {
   color: #006080;
   background-color: #EDF7F8; 
 }
-.highlight pre {
+.highlight pre, pre {
   border: 1px solid #006080;
   margin: 10px 0 10px;
 }
