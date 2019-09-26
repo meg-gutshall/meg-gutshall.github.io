@@ -16,12 +16,10 @@ code {
   color: #006080;
   background-color: #EDF7F8; 
 }
-pre {
-  border: 1px solid #006080;
-  margin: 10px 0 10px;
-}
 pre code {
-  font-size: 15px;
+  font-size: 14px;
+  margin: 10px 0 10px;
+  border: 1px solid #006080;
 }
 
 /* Text */
