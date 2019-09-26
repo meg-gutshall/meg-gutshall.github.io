@@ -3,6 +3,7 @@ layout: post
 title: Knowing When to Quit
 date: 2019-08-17 08:28:00 -0400
 permalink: knowing-when-to-quit
+featured-img: "/img/post-images/scorched-earth.jpg"
 categories: [Flatiron School, portfolio projects]
 tags: [software engineering, projects, Ruby, Rails, quitting, restarting]
 excerpt: <p>Sometimes quitting can be a good thing.</p>
@@ -25,6 +26,8 @@ I had one of two choices:
 
 1. **Stick with BookBuddy and somehow dig my way out.** I had put so much work into this project already and I _knew_ there had to be a solution to my problem out there—I just hadn't found it yet.
 2. **Go scorched earth and start from scratch.** At this point, the option was appealing just so I wouldn't feel like slamming my head against a wall anymore. But did I really want to start all over again?
+
+![Burning buildings](/img/post-images/scorched-earth.jpg)
 
 It turns out I landed somewhere in the middle. Like I said before, I had put a **ton** of hard work and long hours into BookBuddy so that app was not going to go anywhere; but that didn't mean it had to be my Rails portfolio project either. It's still sitting happily in its [GitHub repo](https://github.com/meg-gutshall/book-buddy) just waiting for me to obtain a little more knowledge (or patience... or bravery) to pick it up again and continue on. Instead, what I did was abstract the original concept of BookBuddy and create BorrowBuddy, an app that tracks which items you lend out and to whom you lend the items. I was able to use a lot of the code I had already written in my previous project and implement it on a smaller, simpler, more manageable scale.
 
