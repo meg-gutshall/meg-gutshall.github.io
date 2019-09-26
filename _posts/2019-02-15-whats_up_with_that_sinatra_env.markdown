@@ -71,7 +71,7 @@ On Lines 3 and 4 we require our gems and dependencies. Line 3 finds our `Gemfile
 ```ruby
 ActiveRecord::Base.establish_connection(
   adapter: "sqlite3",
-  database: "db/#{ENV[‘SINATRA_ENV’]}.sqlite"
+  database: "db/#{ENV['SINATRA_ENV']}.sqlite"
 )
 ```
 

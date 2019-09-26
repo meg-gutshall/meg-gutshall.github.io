@@ -11,6 +11,19 @@ body {
   webkit-tap-highlight-color: #006080;
 }
 
+/* Code and Code Blocks */
+code {
+  color: #006080;
+  background-color: #EDF7F8; 
+}
+pre {
+  border: 1px solid #006080;
+  margin: 10px 0 10px;
+}
+pre code {
+  font-size: 15px;
+}
+
 /* Text */
 p {
   line-height: 1.5;
@@ -45,10 +58,6 @@ h6.powered_by {
   font-size: 13px;
   margin-top: 0px;
   color: #008080;
-}
-code {
-  color: #006080;
-  background-color: #EDF7F8; 
 }
 a {
   color: #a40080;
