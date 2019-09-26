@@ -130,7 +130,7 @@ On the reaction detail page, the user will see the name of the medication the re
 
 ## Styling
 
-If you don't know by now, you gon learn today... I LOVE HTML AND CSS!!! So I probably spent a little too much time on styling with this project if I'm going to be honest with myself (procrastination in the best way possible). I used [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) for the basic layout as well as a few components like navbar, forms, and buttons. I also used [GoogleFonts](https://fonts.google.com/) for my text and [FontAwesome](https://fontawesome.com/) for the icons throughout my app.
+If you don't know by now, you gon' learn today... I LOVE HTML AND CSS!!! So I probably spent a little too much time on styling with this project if I'm going to be honest with myself (procrastination in the best way possible). I used [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) for the basic layout as well as a few components like navbar, forms, and buttons. I also used [GoogleFonts](https://fonts.google.com/) for my text and [FontAwesome](https://fontawesome.com/) for the icons throughout my app.
 
 ## Troubleshooting
 

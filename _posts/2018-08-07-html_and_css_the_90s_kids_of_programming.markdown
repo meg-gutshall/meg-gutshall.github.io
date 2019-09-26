@@ -43,18 +43,18 @@ There is so much information available on HTML and CSS as they are fundamental p
 
 ### Index
 
-CSS → Cascading Style Sheets
-DNS → Domain Name Server
-HTML → Hypertext Markup Language
-HTTP → Hypertext Transfer Protocol
-SEO → Search Engine Optimization
+CSS → Cascading Style Sheets<br>
+DNS → Domain Name Server<br>
+HTML → Hypertext Markup Language<br>
+HTTP → Hypertext Transfer Protocol<br>
+SEO → Search Engine Optimization<br>
 URL → Uniform Resource Locator
 
 ### Resources
 
-[Mozilla Development Network](https://developer.mozilla.org/en-US/docs/Learn/HTML)
-[Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/)
-[CSS Tricks](https://css-tricks.com/guides/)
+[Mozilla Development Network](https://developer.mozilla.org/en-US/docs/Learn/HTML)<br>
+[Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/)<br>
+[CSS Tricks](https://css-tricks.com/guides/)<br>
 [W3Schools](https://www.w3schools.com/)
 
 _*Not all HTML elements require a closing tag (such as `img`, `input`, `br`, `hr`, `meta`, and a few others), but that's a topic for another blog post. When in doubt, use a closing tag._
