@@ -27,14 +27,7 @@ I installed and used bundler to set up my project, taking the following steps:
 
 ### Setup - Connecting Your Project to GitHub
 
-1. `cd` into your newly created project folder, then navigate to GitHub. Create a new repository with the same name as the project on your computer. Type `git add .` into your terminal, then enter the last three lines under the "create a new repository on the command line" option. They should look like:
-
-```bash
-git commit -m "first commit"
-git remote add origin git@github.com:[your-username]/[your-project-name].git
-git push -u origin master
-```
-
+1. `cd` into your newly created project folder, then navigate to GitHub. Create a new repository with the same name as the project on your computer. Type `git add .` into your terminal, then enter the last three lines under the "create a new repository on the command line" option.
 2. Refresh your GitHub page and you'll see your project and its files now in your GitHub repository.
 3. To make sure you're working out of the correct repo, click on the green "Clone or download" button in your project's repository. Select "Clone with SSH" for a more secure connection. "Clone with HTTPS" will also work, however, you'll be required to supply your GitHub username and password each time you make a connection to your remote repo. Click on the clipboard image to copy the link and return to your terminal. Make sure you're working in the `code` folder (or whichever folder your project is stored in), then type `git clone` and paste the link to clone the correct repo for your project.
 4. Your new project's repo folder should appear in your local `code` folder. Open your text editor of choice and `cd` into the project folder to start working.
@@ -46,8 +39,8 @@ _Hint:_ To test your text editor's connectivity to GitHub, make a change to your
 Type `git remote -v` into your terminal. If you're connected correctly to your remote repo, you should see the following lines:
 
 ```bash
-origin git@github.com:[your-username]/[your-project-name].git (fetch)
-origin git@github.com:[your-username]/[your-project-name].git (push)
+your-project-name $ origin git@github.com:[your-username]/[your-project-name].git (fetch)
+your-project-name $ origin git@github.com:[your-username]/[your-project-name].git (push)
 ```
 
 ### Setup - The Executable File
