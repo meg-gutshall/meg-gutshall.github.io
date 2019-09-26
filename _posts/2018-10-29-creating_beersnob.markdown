@@ -23,7 +23,6 @@ I experienced quite a few delays in starting this project, each one pretty frust
 I installed and used bundler to set up my project, taking the following steps:
 
 1. Open the terminal and `cd` into the folder in which you want to create your project (mine is called `code`).
-![Picture of environment.rb](/img/post-images/complex-forms-environment.jpg)
 2. Type in `bundle gem` then your project name. (Use an underscore instead of a hyphen to make your project name camel case.) Decide whether you want to use RSpec, MiniTest, or neither for development testing, use the MIT license for open sourcing regulation, and a code of conduct for any open source contributors to follow. Bundler then initializes a git repo for your project!
 
 ### Setup - Connecting Your Project to GitHub
