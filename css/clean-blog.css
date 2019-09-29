@@ -205,6 +205,29 @@ hr.small {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .intro-header .site-heading,
+  .intro-header .post-heading,
+  .intro-header .page-heading {
+    padding: 2.5em 0;
+  }
+
+  .intro-header .site-heading h1,
+  .intro-header .page-heading h1 {
+    font-size: 2em;
+  }
+
+  .intro-header .post-heading h1 {
+    font-size: 1.25em;
+  }
+
+  .intro-header .post-heading .subheading {
+    font-size: 0.75em;
+    color: white;
+    text-shadow: 1px 1px 5px #360036, 2px 2px 5px #550055;
+  }
+}
+
 /* Section Headers */
 
 .section-heading {
