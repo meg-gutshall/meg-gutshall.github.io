@@ -4,85 +4,106 @@
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+html {
+	font-size: 62.5%;
+}
+
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 20px;
-  color: #404040;
-  webkit-tap-highlight-color: #006080;
+	font-family: 'Lora', 'Times New Roman', serif;
+	font-size: 2rem;
+	color: #404040;
+	-webkit-tap-highlight-color: #006080;
 }
 
 /* Code and Code Blocks */
+
 code {
   color: #006080;
   background-color: #EDF7F8; 
 }
+
 pre {
-  margin: 30px 0 30px;
+  margin: 3rem 0 3rem;
 }
+
 pre code {
   font-size: 14px;
 }
 
-/* Text */
+/* Typography */
+
 p {
-  line-height: 1.5;
-  margin: 30px 0;
+	line-height: 1.5;
+	margin: 3rem 0;
 }
-.pink {
-  color: #a40080;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	line-height: 1;
 }
-.purple {
-  color: #550055;
-}
-.blue {
-  color: #006080;
-}
-.teal {
-  color: #008080;
-}
-.about-intro {
-  font-size: 1.4em;
-  font-weight: bold;
-  text-align: center;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  line-height: 1;
-}
+
 h1.about {
   color: #550055;
 }
-h6.powered_by {
-  font-size: 13px;
-  margin-top: 0px;
-  color: #008080;
-}
+
 a {
-  color: #a40080;
-  font-weight: bold;
+	color: #A40080;
+	font-weight: 700;
 }
+
 a:hover,
 a:focus {
   color: #006080;
   text-decoration: none;
 }
+
 a img:hover,
 a img:focus {
-  cursor: zoom-in;
+	cursor: zoom-in;
 }
+
 blockquote {
-  color: #808080;
-  font-style: italic;
+	color: #808080;
+	font-style: italic;
 }
+
 hr.small {
-  max-width: 100px;
-  margin: 15px auto;
-  border-width: 4px;
-  border-color: white;
+	max-width: 10rem;
+	margin: 1.5rem auto;
+	border-width: 0.4rem;
+	border-color: white;
+}
+
+.about-intro {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pink {
+  color: #a40080;
+}
+
+.purple {
+  color: #550055;
+}
+
+.blue {
+  color: #006080;
+}
+
+.teal {
+  color: #008080;
 }
 
 /* Page Headers */
+
 .intro-header {
   background: no-repeat center center;
   background-color: #808080;
@@ -93,16 +114,19 @@ hr.small {
   -o-background-size: cover;
   margin-bottom: 50px;
 }
+
 .intro-header .site-heading,
 .intro-header .page-heading {
   text-align: center;
 }
+
 .intro-header .site-heading h1,
 .intro-header .page-heading h1 {
   margin-top: 0;
   color: white;
   text-shadow: 1px 1px 5px #360036, 3px 3px 5px #a40080, 2px 2px 5px #550055;
 }
+
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
   font-size: 24px;
@@ -116,10 +140,12 @@ hr.small {
 }
 
 /* Post Headers */
+
 .intro-header .post-heading h1 {
   color: white;
   text-shadow: 1px 1px 5px #360036, 3px 3px 5px #a40080, 2px 2px 5px #550055;
 }
+
 .intro-header .post-heading .subheading,
 .intro-header .post-heading .meta {
   line-height: 1.1;
@@ -127,18 +153,21 @@ hr.small {
   color: white;
   text-shadow: 1px 1px 5px #360036, 2px 2px 5px #550055;
 }
+
 .intro-header .post-heading .subheading {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 24px;
   margin: 10px 0 30px;
   font-weight: 600;
 }
+
 .intro-header .post-heading .meta {
   font-family: 'Lora', 'Times New Roman', serif;
   font-style: italic;
   font-weight: 300;
   font-size: 20px;
 }
+
 .intro-header .post-heading .meta a {
   color: white;
 }
@@ -149,13 +178,16 @@ hr.small {
   .intro-header .page-heading {
     padding: 150px 0;
   }
+
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
     font-size: 80px;
   }
+
   .intro-header .post-heading h1 {
     font-size: 55px;
   }
+
   .intro-header .post-heading .subheading {
     font-size: 30px;
     color: white;
@@ -164,6 +196,7 @@ hr.small {
 }
 
 /* Section Headers */
+
 .section-heading {
   font-size: 36px;
   margin-top: 60px;
@@ -171,6 +204,7 @@ hr.small {
 }
 
 /* Navigation */
+
 .navbar-custom {
   background: white;
   position: absolute;
@@ -180,9 +214,11 @@ hr.small {
   z-index: 3;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 .navbar-custom .navbar-brand {
   font-weight: 800;
 }
+
 .navbar-custom .nav li a {
   text-transform: uppercase;
   font-size: 12px;
@@ -195,18 +231,22 @@ hr.small {
     background: transparent;
     border-bottom: 1px solid transparent;
   }
+
   .navbar-custom .navbar-brand {
     color: #008080;
     padding: 20px;
   }
+
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
     color: rgba(0, 128, 128, 0.8);
   }
+
   .navbar-custom .nav li a {
     color: #008080;
     padding: 20px;
   }
+
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
     color: rgba(0, 128, 128, 0.8);
@@ -227,6 +267,7 @@ hr.small {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
+
   .navbar-custom.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
@@ -237,20 +278,25 @@ hr.small {
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
   }
+
   .navbar-custom.is-fixed .navbar-brand {
     color: #404040;
   }
+
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
     color: #006080;
   }
+
   .navbar-custom.is-fixed .nav li a {
     color: #404040;
   }
+
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
     color: #006080;
   }
+
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
     -webkit-transform: translate3d(0, 100%, 0);
@@ -262,39 +308,47 @@ hr.small {
 }
 
 /* Post Previews */
+
 .post-preview > a {
   color: #a40080;
 }
+
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
   color: #006080;
 }
+
 .post-preview > a > .post-title {
   font-size: 30px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
+
 .post-preview > a > .post-subtitle {
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
 }
+
 .post-preview > .post-meta {
   color: #808080;
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
 }
+
 .post-preview > .post-meta > a {
   text-decoration: none;
   color: #a40080;
 }
+
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
   color: #006080;
   text-decoration: underline;
 }
+
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 36px;
@@ -317,10 +371,12 @@ hr.small {
 footer {
   padding: 50px 0 65px;
 }
+
 footer .list-inline {
   margin: 0;
   padding: 0;
 }
+
 footer .copyright {
   font-size: 14px;
   text-align: center;
@@ -328,6 +384,7 @@ footer .copyright {
 }
 
 /* Form Labels */
+
 .floating-label-form-group {
   font-size: 14px;
   position: relative;
@@ -335,6 +392,7 @@ footer .copyright {
   padding-bottom: 0.5em;
   border-bottom: 1px solid #eeeeee;
 }
+
 .floating-label-form-group input,
 .floating-label-form-group textarea {
   z-index: 1;
@@ -348,6 +406,7 @@ footer .copyright {
   box-shadow: none !important;
   resize: none;
 }
+
 .floating-label-form-group label {
   display: block;
   z-index: 0;
@@ -356,30 +415,33 @@ footer .copyright {
   margin: 0;
   font-size: 0.85em;
   line-height: 1.764705882em;
-  vertical-align: middle;
-  vertical-align: baseline;
   opacity: 0;
   -webkit-transition: top 0.3s ease,opacity 0.3s ease;
   -moz-transition: top 0.3s ease,opacity 0.3s ease;
   -ms-transition: top 0.3s ease,opacity 0.3s ease;
   transition: top 0.3s ease,opacity 0.3s ease;
 }
+
 .floating-label-form-group::not(:first-child) {
   padding-left: 14px;
   border-left: 1px solid #eeeeee;
 }
+
 .floating-label-form-group-with-value label {
   top: 0;
   opacity: 1;
 }
+
 .floating-label-form-group-with-focus label {
   color: #006080;
 }
+
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
 
 /* Buttons */
+
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -391,10 +453,12 @@ form .row:first-child .floating-label-form-group {
   background-color: #a40080;
   border: none;
 }
+
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
 }
+
 .btn-default:hover,
 .btn-default:focus {
   background-color: #006080;
@@ -402,9 +466,11 @@ form .row:first-child .floating-label-form-group {
 }
 
 /* Pagers */
+
 .pager {
   margin: 20px 0 0;
 }
+
 .pager li > a,
 .pager li > span {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -424,12 +490,14 @@ form .row:first-child .floating-label-form-group {
     padding: 15px 25px;
   }
 }
+
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
   background-color: #006080;
   border: 1px solid #006080;
 }
+
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
@@ -440,56 +508,25 @@ form .row:first-child .floating-label-form-group {
 }
 
 /* Selection */
+
 ::-moz-selection {
   color: white;
   text-shadow: none;
   background: #006080;
 }
+
 ::selection {
   color: white;
   text-shadow: none;
   background: #006080;
 }
+
 img::selection {
   color: white;
   background: transparent;
 }
+
 img::-moz-selection {
   color: white;
   background: transparent;
-}
-
-/* SVG Alignment */
-.svg-center {
-    display: inline;
-    position: relative;
-    top: 3px;
-}
-
-/* Fonts */
-@font-face {
-    font-family: 'glyphterregular';
-    src: url('../fonts/glyphter-webfont.eot');
-    src: url('../fonts/glyphter-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/glyphter-webfont.woff2') format('woff2'),
-         url('../fonts/glyphter-webfont.woff') format('woff'),
-         url('../fonts/glyphter-webfont.ttf') format('truetype'),
-         url('../fonts/glyphter-webfont.svg#glyphterregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Learn Icon */
-.learn-icon {
-  position: relative;
-  top: 5px;
-  display: inline-block;
-  font-family: 'glyphterregular';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  color:#fff;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
