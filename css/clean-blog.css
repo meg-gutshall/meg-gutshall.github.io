@@ -250,8 +250,8 @@ hr.small {
 
   .navbar-custom .nav li a {
     color: rgba(0, 128, 128, 0.8);
-    font-size: 1.8em;
-    padding: 2em;
+    font-size: 0.9em;
+    padding: 1em;
   }
   
   .navbar-custom .nav li a:hover,
