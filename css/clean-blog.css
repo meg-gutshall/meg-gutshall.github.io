@@ -340,26 +340,25 @@ hr.small {
 }
 
 .post-preview > .post-meta {
-  color: #808080;
+  color: #003838;
   font-size: 1.8rem;
   font-style: italic;
   margin-top: 0;
 }
 
 .post-preview > .post-meta > a {
+  color: rgba(0, 27, 36, 0.75);
   text-decoration: none;
-  color: #a40080;
 }
 
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #006080;
-  text-decoration: underline;
+  color: #001B24;
 }
 
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
-    font-size: 3.6em;
+    font-size: 1.8em;
   }
 }
 
