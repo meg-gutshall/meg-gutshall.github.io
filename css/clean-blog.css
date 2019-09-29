@@ -27,7 +27,7 @@ pre {
 }
 
 pre code {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 /* Typography */
@@ -112,7 +112,7 @@ hr.small {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .intro-header .site-heading,
@@ -129,12 +129,12 @@ hr.small {
 
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 1.1;
   display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
-  margin: 10px 0 0;
+  margin: 1rem 0 0;
   color: white;
   text-shadow: 1px 1px 5px #360036, 2px 2px 5px #550055;
 }
@@ -156,8 +156,8 @@ hr.small {
 
 .intro-header .post-heading .subheading {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  margin: 10px 0 30px;
+  font-size: 2.4rem;
+  margin: 1rem 0 3rem;
   font-weight: 600;
 }
 
@@ -165,7 +165,7 @@ hr.small {
   font-family: 'Lora', 'Times New Roman', serif;
   font-style: italic;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .intro-header .post-heading .meta a {
@@ -176,20 +176,20 @@ hr.small {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    padding: 15em 0;
   }
 
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
-    font-size: 80px;
+    font-size: 8em;
   }
 
   .intro-header .post-heading h1 {
-    font-size: 55px;
+    font-size: 5.5em;
   }
 
   .intro-header .post-heading .subheading {
-    font-size: 30px;
+    font-size: 3em;
     color: white;
     text-shadow: 1px 1px 5px #360036, 2px 2px 5px #550055;
   }
@@ -198,8 +198,8 @@ hr.small {
 /* Section Headers */
 
 .section-heading {
-  font-size: 36px;
-  margin-top: 60px;
+  font-size: 3.6rem;
+  margin-top: 6rem;
   font-weight: 700;
 }
 
@@ -221,7 +221,7 @@ hr.small {
 
 .navbar-custom .nav li a {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 1.8rem;
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -234,7 +234,7 @@ hr.small {
 
   .navbar-custom .navbar-brand {
     color: #008080;
-    padding: 20px;
+    padding: 2em;
   }
 
   .navbar-custom .navbar-brand:hover,
@@ -244,7 +244,8 @@ hr.small {
 
   .navbar-custom .nav li a {
     color: #008080;
-    padding: 20px;
+    font-size: 1.8em;
+    padding: 2em;
   }
 
   .navbar-custom .nav li a:hover,
@@ -320,20 +321,20 @@ hr.small {
 }
 
 .post-preview > a > .post-title {
-  font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .post-preview > a > .post-subtitle {
   margin: 0;
   font-weight: 300;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .post-preview > .post-meta {
   color: #808080;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-style: italic;
   margin-top: 0;
 }
@@ -351,25 +352,25 @@ hr.small {
 
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
-    font-size: 36px;
+    font-size: 3.6em;
   }
 }
 
 /* Captions */
 .caption {
   text-align: center;
-  font-size: 14px;
-  padding: 10px;
+  font-size: 1.4rem;
+  padding: 1rem;
   font-style: italic;
   margin: 0;
   display: block;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 
 /* Footer */
 footer {
-  padding: 50px 0 65px;
+  padding: 5rem 0 6.5rem;
 }
 
 footer .list-inline {
@@ -378,7 +379,7 @@ footer .list-inline {
 }
 
 footer .copyright {
-  font-size: 14px;
+  font-size: 1.4rem;
   text-align: center;
   margin-bottom: 0;
 }
@@ -386,10 +387,10 @@ footer .copyright {
 /* Form Labels */
 
 .floating-label-form-group {
-  font-size: 14px;
+  font-size: 1.4rem;
   position: relative;
   margin-bottom: 0;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -401,7 +402,7 @@ footer .copyright {
   padding-left: 0;
   border: none;
   border-radius: 0;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   background: none;
   box-shadow: none !important;
   resize: none;
@@ -411,10 +412,10 @@ footer .copyright {
   display: block;
   z-index: 0;
   position: relative;
-  top: 2em;
+  top: 2rem;
   margin: 0;
-  font-size: 0.85em;
-  line-height: 1.764705882em;
+  font-size: 0.85rem;
+  line-height: 1.75rem;
   opacity: 0;
   -webkit-transition: top 0.3s ease,opacity 0.3s ease;
   -moz-transition: top 0.3s ease,opacity 0.3s ease;
@@ -423,7 +424,7 @@ footer .copyright {
 }
 
 .floating-label-form-group::not(:first-child) {
-  padding-left: 14px;
+  padding-left: 1.4rem;
   border-left: 1px solid #eeeeee;
 }
 
@@ -445,18 +446,18 @@ form .row:first-child .floating-label-form-group {
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 800;
   letter-spacing: 1px;
   border-radius: 0;
-  padding: 15px 25px;
+  padding: 1.5rem 2.5rem;
   background-color: #a40080;
   border: none;
 }
 
 .btn-lg {
-  font-size: 16px;
-  padding: 25px 35px;
+  font-size: 1.6rem;
+  padding: 2.5rem 3.5rem;
 }
 
 .btn-default:hover,
@@ -468,17 +469,17 @@ form .row:first-child .floating-label-form-group {
 /* Pagers */
 
 .pager {
-  margin: 20px 0 0;
+  margin: 2rem 0 0;
 }
 
 .pager li > a,
 .pager li > span {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 800;
   letter-spacing: 1px;
-  padding: 10px 5px;
+  padding: 1rem 0.5rem;
   background-color: white;
   border-radius: 0;
 }
@@ -486,8 +487,8 @@ form .row:first-child .floating-label-form-group {
 @media only screen and (min-width: 768px) {
   .pager li > a,
   .pager li > span {
-    font-size: 14px;
-    padding: 15px 25px;
+    font-size: 1.4em;
+    padding: 1.5em 2.5em;
   }
 }
 
