@@ -239,24 +239,24 @@ hr.small {
   }
 
   .navbar-custom .navbar-brand {
-    color: #008080;
+    color: #88D9D9;
     padding: 2em;
   }
 
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(0, 128, 128, 0.8);
+    color: rgba(136, 217, 217, 0.8);
   }
 
   .navbar-custom .nav li a {
-    color: rgba(0, 128, 128, 0.8);
+    color: rgba(136, 217, 217, 0.8);
     font-size: 0.9em;
     padding: 1em;
   }
   
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: #008080;
+    color: #88D9D9;
   }
 }
 
@@ -340,7 +340,7 @@ hr.small {
 }
 
 .post-preview > .post-meta {
-  color: #003838;
+  color: #3C003C;
   font-size: 1.8rem;
   font-style: italic;
   margin-top: 0;
