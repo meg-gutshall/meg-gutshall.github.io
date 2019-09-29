@@ -69,12 +69,12 @@ a img:focus {
 }
 
 a.social-icons {
-  color: #550055;
+  color: #4B003A;
 }
 
 a.social-icons:hover,
 a.social-icons:focus {
-  color: #3C003C;
+  color: #A40080;
 }
 
 blockquote {
