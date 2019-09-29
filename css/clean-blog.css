@@ -220,7 +220,7 @@ hr.small {
 }
 
 .navbar-custom .nav li a {
-  color: rgba(0, 128, 128, 0.8);
+  color: rgba(136, 217, 217, 0.8);
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 800;
@@ -229,7 +229,7 @@ hr.small {
 
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #008080;
+  color: #88D9D9;
 }
 
 @media only screen and (min-width: 768px) {
@@ -292,7 +292,7 @@ hr.small {
 
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #88D9D9;
+    color: #008080;
   }
 
   .navbar-custom.is-fixed .nav li a {
@@ -302,12 +302,11 @@ hr.small {
 
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #88D9D9;
+    color: #008080;
   }
 
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
-    color: #008080;
     -webkit-transform: translate3d(0, 100%, 0);
     -moz-transform: translate3d(0, 100%, 0);
     -ms-transform: translate3d(0, 100%, 0);
