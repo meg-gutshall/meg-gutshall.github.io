@@ -280,7 +280,7 @@ hr.small {
     position: fixed;
     top: -61px;
     background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid #88D9D9;
+    border-bottom: 1px solid #EBC6EB;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
@@ -292,7 +292,7 @@ hr.small {
 
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #008080;
+    color: #88D9D9;
   }
 
   .navbar-custom.is-fixed .nav li a {
@@ -302,11 +302,12 @@ hr.small {
 
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #008080;
+    color: #88D9D9;
   }
 
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
+    color: #008080;
     -webkit-transform: translate3d(0, 100%, 0);
     -moz-transform: translate3d(0, 100%, 0);
     -ms-transform: translate3d(0, 100%, 0);
