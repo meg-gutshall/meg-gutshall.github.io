@@ -122,6 +122,7 @@ hr.small {
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: 5rem;
+  padding-bottom: 1rem;
 }
 
 .intro-header .site-heading,
