@@ -68,6 +68,15 @@ a img:focus {
 	cursor: zoom-in;
 }
 
+a.social-icons {
+  color: #550055;
+}
+
+a.social-icons:hover,
+a.social-icons:focus {
+  color: #3C003C;
+}
+
 blockquote {
 	color: #808080;
 	font-style: italic;
