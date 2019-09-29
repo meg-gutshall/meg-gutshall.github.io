@@ -245,32 +245,6 @@ hr.small {
   .navbar-custom {
     background: transparent;
     border-bottom: 1px solid transparent;
-  }
-
-  .navbar-custom .navbar-brand {
-    color: #88D9D9;
-    padding: 2em;
-  }
-
-  .navbar-custom .navbar-brand:hover,
-  .navbar-custom .navbar-brand:focus {
-    color: rgba(136, 217, 217, 0.8);
-  }
-
-  .navbar-custom .nav li a {
-    color: rgba(136, 217, 217, 0.8);
-    font-size: 0.9em;
-    padding: 1em;
-  }
-  
-  .navbar-custom .nav li a:hover,
-  .navbar-custom .nav li a:focus {
-    color: #88D9D9;
-  }
-}
-
-@media only screen and (min-width: 1170px) {
-  .navbar-custom {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
@@ -297,6 +271,7 @@ hr.small {
 
   .navbar-custom.is-fixed .navbar-brand {
     color: #3C003C;
+    padding: 2em;
   }
 
   .navbar-custom.is-fixed .navbar-brand:hover,
@@ -306,7 +281,8 @@ hr.small {
 
   .navbar-custom.is-fixed .nav li a {
     font-size: 0.9em;
-    color: #3C003C;
+    color: rgba(136, 217, 217, 0.8);
+    padding: 1em;
   }
 
   .navbar-custom.is-fixed .nav li a:hover,
