@@ -5,12 +5,12 @@
  */
 
 html {
-	font-size: 10px;
+	font-size: 62.5%;
 }
 
 body {
 	font-family: 'Lora', 'Times New Roman', serif;
-	font-size: 2rem;
+  font-size: 2rem;
 	color: #404040;
 	-webkit-tap-highlight-color: #006080;
 }
@@ -234,8 +234,8 @@ hr.small {
 
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background: white;
-    border-bottom: 1px solid white;
+    background: transparent;
+    border-bottom: 1px solid transparent;
   }
 
   .navbar-custom .navbar-brand {
