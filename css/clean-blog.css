@@ -220,16 +220,22 @@ hr.small {
 }
 
 .navbar-custom .nav li a {
+  color: rgba(0, 128, 128, 0.8);
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 800;
   letter-spacing: 1px;
 }
 
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
+  color: #008080;
+}
+
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background: transparent;
-    border-bottom: 1px solid transparent;
+    background: white;
+    border-bottom: 1px solid white;
   }
 
   .navbar-custom .navbar-brand {
@@ -243,14 +249,14 @@ hr.small {
   }
 
   .navbar-custom .nav li a {
-    color: #008080;
+    color: rgba(0, 128, 128, 0.8);
     font-size: 1.8em;
     padding: 2em;
   }
-
+  
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(0, 128, 128, 0.8);
+    color: #008080;
   }
 }
 
@@ -274,28 +280,29 @@ hr.small {
     position: fixed;
     top: -61px;
     background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid #88D9D9;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
   }
 
   .navbar-custom.is-fixed .navbar-brand {
-    color: #404040;
+    color: #3C003C;
   }
 
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #006080;
+    color: #008080;
   }
 
   .navbar-custom.is-fixed .nav li a {
-    color: #404040;
+    font-size: 0.9em;
+    color: #3C003C;
   }
 
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #006080;
+    color: #008080;
   }
 
   .navbar-custom.is-visible {
