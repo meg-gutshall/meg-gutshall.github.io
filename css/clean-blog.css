@@ -335,18 +335,13 @@ hr.small {
     margin-top: 5rem;
   }
 
-  .navbar-nav > .nav li:hover,
-  .navbar-nav > .nav li:focus {
-    color: #3C003C;
-  }
-
   .navbar-custom .nav li a {
     color: #550055;
   }
 
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: white;
+    color: #008080;
   }
 }
 
