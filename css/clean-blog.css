@@ -358,6 +358,7 @@ hr.small {
   .post-preview:first-of-type {
     position: absolute;
     top: 0;
+    display: block;
   }
 }
 
