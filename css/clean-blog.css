@@ -243,10 +243,6 @@ hr.small {
 }
 
 @media only screen and (min-width: 768px) {
-  div#nav-position {
-    position: relative;
-  }
-  
   .navbar-custom {
     background: transparent;
     border-bottom: 1px solid transparent;
@@ -302,6 +298,12 @@ hr.small {
     -ms-transform: translate3d(0, 100%, 0);
     -o-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  div#nav-position {
+    position: relative;
   }
 }
 
