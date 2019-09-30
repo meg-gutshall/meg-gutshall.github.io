@@ -307,13 +307,11 @@ hr.small {
   }
 
   div#page-position {
-    position: absolute;
-    top: 0;
+    position: relative;
   }
 
   article#post-position {
-    position: absolute;
-    top: 0;
+    position: relative;
   }
 }
 
