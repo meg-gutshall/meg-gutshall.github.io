@@ -300,44 +300,44 @@ hr.small {
     transform: translate3d(0, 100%, 0);
   }
 
-  .navbar-default.navbar-toggle {
+  button.navbar-default.navbar-toggle {
     border-color: #003838;
   }
 
-  .navbar-default.navbar-toggle:hover,
-  .navbar-default.navbar-toggle:focus {
+  button.navbar-default.navbar-toggle:hover,
+  button.navbar-default.navbar-toggle:focus {
     background-color: white;
     border-color: #008080;
   }
 
-  .navbar-default.navbar-toggle.icon-bar {
+  button.navbar-default.navbar-toggle.icon-bar {
     background-color: #008080;
   }
 
-  .navbar-default.navbar-toggle.icon-bar:hover,
-  .navbar-default.navbar-toggle.icon-bar:focus {
+  button.navbar-default.navbar-toggle.icon-bar:hover,
+  button.navbar-default.navbar-toggle.icon-bar:focus {
     background-color: #003838;
   }
 
-  .navbar-collapse > ul.navbar-nav {
+  div#navbar-collapse.collapse.navbar-collapse > ul.nav.navbar-nav {
     margin: 0 -15px;
   }
 
-  .navbar-collapse > ul.navbar-nav > li.nav-item {
+  div#navbar-collapse.collapse.navbar-collapse > ul.nav.navbar-nav > li.nav-item {
     background-color: white;
   }
 
-  .navbar-collapse > ul.navbar-nav > li.nav-item:hover,
-  .navbar-collapse > ul.navbar-nav > li.nav-item:focus {
+  div#navbar-collapse.collapse.navbar-collapse > ul.nav.navbar-nav > li.nav-item:hover,
+  div#navbar-collapse.collapse.navbar-collapse > ul.nav.navbar-nav > li.nav-item:focus {
     background-color: #3C003C
   }
 
-  .navbar-collapse > ul.navbar-nav > li.nav-item > a.nav-link {
+  div#navbar-collapse.collapse.navbar-collapse > ul.nav.navbar-nav > li.nav-item > a.nav-link {
     color: #550055;
   }
 
-  .navbar-collapse > ul.navbar-nav > li.nav-item > a.nav-link:hover,
-  .navbar-collapse > ul.navbar-nav > li.nav-item > a.nav-link:focus {
+  div#navbar-collapse.collapse.navbar-collapse > ul.nav.navbar-nav > li.nav-item > a.nav-link:hover,
+  div#navbar-collapse.collapse.navbar-collapse > ul.nav.navbar-nav > li.nav-item > a.nav-link:focus {
     color: white;
   }
 }
