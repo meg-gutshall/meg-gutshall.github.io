@@ -305,6 +305,16 @@ hr.small {
   div#nav-position {
     position: relative;
   }
+
+  div#page-position {
+    position: absolute;
+    top: 0;
+  }
+
+  article#post-position {
+    position: absolute;
+    top: 0;
+  }
 }
 
 /* Post Previews */
