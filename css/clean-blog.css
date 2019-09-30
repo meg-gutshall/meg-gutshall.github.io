@@ -113,10 +113,6 @@ hr.small {
 
 /* Page Headers */
 
-header.intro-header {
-  position: relative;
-}
-
 .intro-header {
   background: no-repeat center center;
   background-color: #808080;
@@ -218,6 +214,10 @@ header.intro-header {
 }
 
 /* Navigation */
+
+div#nav-position {
+  position: relative;
+}
 
 .navbar-custom {
   background: white;
