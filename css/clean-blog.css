@@ -305,6 +305,10 @@ hr.small {
   div#nav-position {
     position: relative;
   }
+
+  div.main-content {
+    margin-top: 5rem;
+  }
 }
 
 /* Post Previews */
@@ -351,14 +355,6 @@ hr.small {
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 1.8em;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .post-preview:first-of-type {
-    position: absolute;
-    top: 0;
-    display: block;
   }
 }
 
