@@ -319,27 +319,10 @@ hr.small {
     background-color: #003838;
   }
 
-  div#navbar-collapse.collapse.navbar-collapse > ul.nav.navbar-nav {
+  div#navbar-collapse.collapse.navbar-collapse > ul.navbar-nav {
     margin: 0 -15px;
   }
 
-  div#navbar-collapse.collapse.navbar-collapse > ul.nav.navbar-nav > li.nav-item {
-    background-color: white;
-  }
-
-  div#navbar-collapse.collapse.navbar-collapse > ul.nav.navbar-nav > li.nav-item:hover,
-  div#navbar-collapse.collapse.navbar-collapse > ul.nav.navbar-nav > li.nav-item:focus {
-    background-color: #3C003C
-  }
-
-  div#navbar-collapse.collapse.navbar-collapse > ul.nav.navbar-nav > li.nav-item > a.nav-link {
-    color: #550055;
-  }
-
-  div#navbar-collapse.collapse.navbar-collapse > ul.nav.navbar-nav > li.nav-item > a.nav-link:hover,
-  div#navbar-collapse.collapse.navbar-collapse > ul.nav.navbar-nav > li.nav-item > a.nav-link:focus {
-    color: white;
-  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -349,6 +332,20 @@ hr.small {
 
   div.main-content {
     margin-top: 5rem;
+  }
+
+  .navbar-custom .nav li:hover,
+  .navbar-custom .nav li:focus {
+    color: #3C003C;
+  }
+
+  .navbar-custom .nav li a {
+    color: #550055;
+  }
+
+  .navbar-custom .nav li a:hover,
+  .navbar-custom .nav li a:focus {
+    color: white;
   }
 }
 
