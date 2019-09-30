@@ -335,8 +335,8 @@ hr.small {
     margin-top: 5rem;
   }
 
-  .navbar-custom .nav li:hover,
-  .navbar-custom .nav li:focus {
+  .nav li:hover,
+  .nav li:focus {
     color: #3C003C;
   }
 
