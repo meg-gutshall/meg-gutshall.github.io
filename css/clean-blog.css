@@ -313,6 +313,11 @@ hr.small {
   article#post-position {
     position: relative;
   }
+
+  div#content-position {
+    position: absolute;
+    top: 0;
+  }
 }
 
 /* Post Previews */
