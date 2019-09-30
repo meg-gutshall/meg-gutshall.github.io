@@ -355,7 +355,7 @@ hr.small {
 }
 
 @media only screen and (max-width: 767px) {
-  .post-preview {
+  .post-preview:first-of-type {
     position: absolute;
     top: 0;
   }
