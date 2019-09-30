@@ -305,19 +305,6 @@ hr.small {
   div#nav-position {
     position: relative;
   }
-
-  div#page-position {
-    position: relative;
-  }
-
-  article#post-position {
-    position: relative;
-  }
-
-  div#content-position {
-    position: absolute;
-    top: 0;
-  }
 }
 
 /* Post Previews */
@@ -364,6 +351,13 @@ hr.small {
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 1.8em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .post-preview {
+    position: absolute;
+    top: 0;
   }
 }
 
