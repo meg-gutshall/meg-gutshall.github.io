@@ -113,6 +113,10 @@ hr.small {
 
 /* Page Headers */
 
+header.intro-header {
+  position: relative;
+}
+
 .intro-header {
   background: no-repeat center center;
   background-color: #808080;
@@ -123,7 +127,6 @@ hr.small {
   -o-background-size: cover;
   margin-bottom: 5rem;
   padding-bottom: 1rem;
-  position: relative;
 }
 
 .intro-header .site-heading,
@@ -224,6 +227,7 @@ hr.small {
   width: 100%;
   z-index: 3;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-width: 0 0 1px;
 }
 
 .navbar-custom .navbar-brand {
