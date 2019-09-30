@@ -121,8 +121,7 @@ hr.small {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 5rem;
-  padding-bottom: 1rem;
+  padding: 2.5rem;
 }
 
 .intro-header .site-heading,
@@ -215,10 +214,6 @@ hr.small {
 
 /* Navigation */
 
-div#nav-position {
-  position: relative;
-}
-
 .navbar-custom {
   background: white;
   position: absolute;
@@ -248,6 +243,10 @@ div#nav-position {
 }
 
 @media only screen and (min-width: 768px) {
+  div#nav-position {
+    position: relative;
+  }
+  
   .navbar-custom {
     background: transparent;
     border-bottom: 1px solid transparent;
