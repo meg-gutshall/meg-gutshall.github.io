@@ -310,12 +310,12 @@ hr.small {
     border-color: #008080;
   }
 
-  div.navbar-header.page-scroll > button.navbar-toggle > span.icon-bar {
+  span.icon-bar {
     background-color: #008080;
   }
 
-  div.navbar-header.page-scroll > button.navbar-toggle > span.icon-bar:hover,
-  div.navbar-header.page-scroll > button.navbar-toggle > span.icon-bar:focus {
+  span.icon-bar:hover,
+  span.icon-bar:focus {
     background-color: #003838;
   }
 
