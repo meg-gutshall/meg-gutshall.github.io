@@ -275,6 +275,7 @@ hr.small {
     top: -61px;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 2px solid #EBC6EB;
+    border-radius: 0;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
@@ -282,6 +283,7 @@ hr.small {
 
   .navbar-custom.is-fixed .navbar-brand {
     color: #3C003C;
+    text-shadow: none;
     padding: 2em;
   }
 
@@ -298,6 +300,7 @@ hr.small {
   .navbar-custom.is-fixed .nav li a {
     font-size: 0.9em;
     color: #3C003C;
+    text-shadow: none;
     padding: 1em;
   }
 
