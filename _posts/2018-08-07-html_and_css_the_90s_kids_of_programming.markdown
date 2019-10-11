@@ -2,7 +2,6 @@
 layout: post
 title: "HTML & CSS: The ‘90s Kids of Programming"
 date: 2018-08-07 00:12:12 -0400
-permalink: html-and-css-the-90s-kids-of-programming
 featured-img: /img/post-images/html-css.png
 categories: [Flatiron School]
 tags: [software engineering, HTML, CSS]

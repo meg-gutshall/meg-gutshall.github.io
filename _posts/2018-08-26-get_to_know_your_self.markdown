@@ -2,7 +2,6 @@
 layout: post
 title: "Get to Know Your Self"
 date: 2018-08-26 13:23:53 -0400
-permalink: get-to-know-your-self
 featured-img: /img/post-images/simple-self.png
 categories: [Flatiron School]
 tags: [software engineering, Ruby, keywords]

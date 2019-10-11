@@ -2,7 +2,6 @@
 layout: post
 title: "Knowing When to Quit"
 date: 2019-08-17 08:28:00 -0400
-permalink: knowing-when-to-quit
 featured-img: /img/post-images/scorched-earth.jpg
 categories: [Flatiron School, portfolio projects]
 tags: [software engineering, projects, Ruby, Rails, quitting, restarting]

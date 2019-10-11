@@ -2,7 +2,6 @@
 layout: post
 title: "Slipsum L. Jackson Blog Post"
 date: 2019-03-29 14:25:36 +0000
-permalink: slipsum-l-jackson-blog-post
 categories: [Flatiron School, Code Talk]
 tags: [software engineering, code talks, Jekyll, GitHub pages, blogging, Lorem Ipsum]
 excerpt: <p>I created this post as part of a demonstration while recording a Code Talk video! Find great resources on blogging, GitHub Pages, Jekyll, and Lorem Ipsum generators here.</p>
