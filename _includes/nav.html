@@ -17,15 +17,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
                 </li>
-                {% for page in site.pages %}
-                    {% if page.title %}
-                        {% if page.url != '/404.html' %}
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                            </li>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ "/blog/" | prepend: site.baseurl }}">{{ page.title }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ "/about/" | prepend: site.baseurl }}">{{ page.title }}</a>
+                </li>
             </ul>
         </div> <!-- /.navbar-collapse -->
     </nav>
