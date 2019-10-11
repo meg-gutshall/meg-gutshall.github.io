@@ -22,7 +22,7 @@ Here’s a basic overview of the rendering process: HTML documents are stored at
 
 ## The Semantics of HTML
 
-As a linguistics nerd (in case you missed it, there's a great example of my Spanish linguistics nerdiness coming out in my last post, ["The Little Things Matter"](https://meghangutshall.com/blog/the-little-things-matter)), I love HTML due to its semantic capabilities, so bear with me as I geek out for a minute…
+As a linguistics nerd (in case you missed it, there's a great example of my Spanish linguistics nerdiness coming out in my last post, ["The Little Things Matter"](https://meghangutshall.com/2018/07/21/the_little_things_matter/)), I love HTML due to its semantic capabilities, so bear with me as I geek out for a minute…
 
 An HTML document consists of two sections: a head and a body. The head is not displayed as part of the web page when the browser renders the HTML document. Instead it contains data (such as page title, a favicon, links to the document’s CSS and JavaScript, and metadata) which relays additional information not contained in the body section to the web browser. A web page’s title and favicon appear in the window tab of the web browser. The CSS link provides styling rules for the HTML document and the JavaScript link enables additional, more complex features. Metadata defines the document’s language, character encoding, author, and description. Adding an accurate description that includes applicable keywords is especially important as it affects the site’s SEO and will determine the frequency with which the web page appears in Internet search results.
 
