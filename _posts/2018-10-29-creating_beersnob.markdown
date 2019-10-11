@@ -2,7 +2,7 @@
 layout: post
 title: "Creating BeerSnob"
 date: 2018-10-29 13:49:46 -0400
-categories: [Flatiron School, portfolio projects]
+# categories: [Flatiron School, portfolio projects]
 tags: [software engineering, CLI, command line interface, projects]
 excerpt: <p>Read through the process of how I created my first project at Flatiron where app users can choose from a predefined list to learn about different beer styles and their characteristics. I detail the steps I took to set up the project, the function of each program file, and some struggles I ran into along the way.</p>
 ---

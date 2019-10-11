@@ -3,7 +3,7 @@ layout: post
 title: "What's Up With That!?: SINATRA_ENV"
 date: 2019-02-15 17:01:16 -0500
 featured-img: /img/post-images/complex-forms-environment.jpg
-categories: [Flatiron School]
+# categories: [Flatiron School]
 tags: [software engineering, Sinatra, environment]
 excerpt: <p>If you’re in the Sinatra Active Record section of the Flatiron School, you’ve probably seen this error message a few times “Migrations are pending. Run <code>rake db:migrate SINATRA_ENV=test</code> to resolve the issue.” Well we know we need to run <code>rake db:migrate</code> to create our migration tables, but <code>"SINATRA_ENV"</code>... what’s up with that!? It turns out that <code>"SINATRA_ENV"</code> is much more powerful than you might think and is the key (both literally and figuratively) to making your program run effectively.</p>
 ---

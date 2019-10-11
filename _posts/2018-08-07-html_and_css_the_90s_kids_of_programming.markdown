@@ -3,7 +3,7 @@ layout: post
 title: "HTML & CSS: The ‘90s Kids of Programming"
 date: 2018-08-07 00:12:12 -0400
 featured-img: /img/post-images/html-css.png
-categories: [Flatiron School]
+# categories: [Flatiron School]
 tags: [software engineering, HTML, CSS]
 excerpt: <p>The combination of HTML and CSS make up a huge part of front-end web development. If a program touches the Internet, it will without a doubt rely on HTML and CSS at its base level. There are plenty of frameworks and templates that do a lot of (if not all) the work for you, but this leads to websites and apps looking like homogenous cookie-cutter builds. Contrary to popular belief, I think that HTML and CSS are still as important as they were some two decades past so in this post I go back to the very basics and give an introduction to each of these amazing languages for those who may be new to software development.</p>
 ---
