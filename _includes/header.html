@@ -9,6 +9,8 @@
               <h1>
                 {% if page.title == "Blog" %}
                   {{ page.blog-title }}
+                {% elsif page.splash-title %}
+                  {{ page.splash-title }}
                 {% elsif page.title %}
                   {{ page.title }}
                 {% else %}
