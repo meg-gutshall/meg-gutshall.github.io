@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Slipsum L. Jackson Blog Post"
+title: Slipsum L. Jackson Blog Post
 date: 2019-03-29 14:25:36 +0000
 permalink: slipsum-l-jackson-blog-post
 categories: [Flatiron School, Code Talk]

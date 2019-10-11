@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "The Little Things Matter"
+title: The Little Things Matter
 date: 2018-07-21 18:43:56 -0400
 permalink: the-little-things-matter
-featured-img: "/img/post-images/return-false.jpg"
+featured-img: /img/post-images/return-false.jpg
 categories: [Flatiron School]
 tags: [software engineering, Ruby, Spanish]
 excerpt: <p>The title of this post may be a bit misleading. I'm not telling you to stress out over the little details and tiny mistakes, but when you're first learning something new, that's definitely the time to be aware of them and form good habits to combat any bad ones you see beginning to develop because sometimes small mistakes can snowball into big misunderstandings. I give some examples in my post here&mdash;one relating to my Spanish learning experience at Temple, the other concerning a recent lab I had trouble solving.</p>

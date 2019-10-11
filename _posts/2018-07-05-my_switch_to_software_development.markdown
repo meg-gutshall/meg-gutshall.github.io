@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "My $witch to $oftware Development"
+title: My $witch to $oftware Development
 date: 2018-07-05 09:39:05 -0400
 permalink: my-switch-to-software-development
-featured-img: "/img/post-images/cash.jpg"
+featured-img: /img/post-images/cash.jpg
 categories: [Flatiron School]
 tags: [software engineering, reflection]
 excerpt: <p>My path in life so far has been somewhat non-traditional. I went to college for four years with only one summer break (working three jobs at one point), I've never had a defined career path so I took jobs based on opportunity, I've been fortunate enough to travel to several countries and still save up enough to become a single female homeowner when I turned 25, and I basically came out on the other end of a quarter-life crisis with a new, daring plan for my life in mind. This post outlines key moments that got me to where I am today and will surely be followed in the future by other similar posts.</p>

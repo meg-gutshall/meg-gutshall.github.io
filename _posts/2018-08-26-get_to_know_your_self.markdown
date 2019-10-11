@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Get to Know Your Self"
+title: Get to Know Your Self
 date: 2018-08-26 13:23:53 -0400
 permalink: get-to-know-your-self
-featured-img: "/img/post-images/simple-self.png"
+featured-img: /img/post-images/simple-self.png
 categories: [Flatiron School]
 tags: [software engineering, Ruby, keywords]
 excerpt: <p>While Ruby is an incredibly user-friendly language, it’s not without its conundrums&mdash;one in particular being <code>self</code>. <code>self</code> is a Ruby keyword that can be scoped to any instance or class. This enables developers to contextually reference a particular instance or class&mdash;depending on what the needs are for their program&mdash;without using a specific variable name. It's not hard to see how this could quickly get confusing. Read on to walk through some simple examples and gain a better understanding of the concept of <code>self</code>.</p>
