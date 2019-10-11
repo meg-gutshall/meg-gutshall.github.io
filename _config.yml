@@ -19,3 +19,4 @@ paginate: 6
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 gems: [jekyll-paginate, jekyll-feed]
+paginate_path: "/blog/page:num/"
