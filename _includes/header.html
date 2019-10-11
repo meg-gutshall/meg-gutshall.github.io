@@ -6,8 +6,20 @@
         {% if layout.type == "pages" %}
           <!-- Page Header -->
           <div class="site-heading">
-              <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-              <span class="subheading">{% if page.title != "About Me" %}{{ site.description }}{% endif %}</span>
+              <h1>
+                {% if page.title == "Blog" %}
+                  {{ page.blog-title }}
+                {% elsif page.title %}
+                  {{ page.title }}
+                {% else %}
+                  {{ site.title }}
+                {% endif %}
+              </h1>
+              <span class="subheading">
+                {% if page.title == "Blog" %}
+                  {{ site.description }}
+                {% endif %}
+              </span>
           </div>
         {% elsif layout.type == "posts" %}
           <!-- Post Header -->
