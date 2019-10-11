@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Little Things Matter
+title: "The Little Things Matter"
 date: 2018-07-21 18:43:56 -0400
 permalink: the-little-things-matter
 featured-img: /img/post-images/return-false.jpg

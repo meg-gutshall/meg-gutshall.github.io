@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What's Up With That!?: SINATRA_ENV
+title: "What's Up With That!?: SINATRA_ENV"
 date: 2019-02-15 17:01:16 -0500
 permalink: whats-up-with-that-sinatra-env
 featured-img: /img/post-images/complex-forms-environment.jpg

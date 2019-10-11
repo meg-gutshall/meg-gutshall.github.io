@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating Rxeactions
+title: "Creating Rxeactions"
 date: 2019-03-12 16:58:52 -0400
 permalink: creating-rxeactions
 categories: [Flatiron School, portfolio projects]
