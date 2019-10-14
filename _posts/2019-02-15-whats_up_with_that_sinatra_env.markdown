@@ -10,7 +10,7 @@ excerpt: <p>If you’re in the Sinatra Active Record section of the Flatiron Sch
 
 If you’re in the Sinatra Active Record section of the Flatiron School, you’ve probably seen this error message a few times: “Migrations are pending. Run `rake db:migrate SINATRA_ENV=test` to resolve the issue.” Well we know we need to run `rake db:migrate` to create our migration tables, but `SINATRA_ENV`... what’s up with that!?
 
-First let’s go over a few files line by line so we can follow `ENV["SINATRA_ENV"]` on it’s journey through our app. For this, I’m using the [Sinatra Complex Forms Associations Lab](https://github.com/meg-gutshall/sinatra-complex-forms-associations-v-000).
+First let’s go over a few files line by line so we can follow `ENV["SINATRA_ENV"]` on its journey through our app. For this, I’m using the [Sinatra Complex Forms Associations Lab](https://github.com/meg-gutshall/sinatra-complex-forms-associations-v-000).
 
 ## Rakefile
 
@@ -63,7 +63,7 @@ require 'bundler/setup'
 Bundler.require(:default, ENV['SINATRA_ENV'])
 ```
 
-On Lines 3 and 4 we require our gems and dependencies. Line 3 finds our `Gemfile` and makes all the gems contained within (plus their dependencies) available to Ruby by adding them to the load path. In Line 4, we’re requiring all of our gems (`:default` represents all gems since we didn’t create gem groups for this app) as well as our deployment environment hash to be used with the Active Record gem.
+On Lines 3 and 4 we require our gems and dependencies. Line 3 finds our `Gemfile` and makes all the gems contained within (plus their dependencies) available to Ruby by adding them to the load path. On Line 4, we’re requiring all of our gems (`:default` represents all gems since we didn’t create gem groups for this app) as well as our deployment environment hash to be used with the Active Record gem.
 
 ### Lines 6-9
 
@@ -142,7 +142,7 @@ So now we know what happens each time the `Rakefile`, the `config/environment.rb
 
 `ENV` is a hash-like accessor for Ruby environment variables. It will change depending on what information Ruby needs. The `ENV` accessor holds all types of information for Ruby as well as its corresponding frameworks and gems. In our case, Ruby needs to define a `"SINATRA_ENV"` so this is added as a key to the `ENV`.
 
-When we run `learn` to test our app, this triggers the gem RSpec which will run our `spec_helper.rb` file.
+When we run `learn` to test our app, this triggers the gem RSpec, which will run our `spec_helper.rb` file.
 
 ![Picture of spec_helper.rb](/img/post-images/complex-forms-spec-helper.jpg)
 
@@ -176,4 +176,4 @@ Starting a new `shotgun` session is like starting a new `rackup` session in that
 
 ## Conclusion
 
-`ENV["SINATRA_ENV"]` started out as a mixed-up mess for me but after I lot of research and deep-diving into my code files, I came to understand it's purpose throughout my programs. Hopefully this post helped you understand it a little bit better as well.
+`ENV["SINATRA_ENV"]` started out as a mixed-up mess for me but after a lot of research and deep-diving into my code files, I came to understand its purpose throughout my programs. Hopefully this post helped you understand it a little bit better as well.
