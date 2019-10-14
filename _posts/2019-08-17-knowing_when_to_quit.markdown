@@ -4,7 +4,7 @@ title: "Knowing When to Quit"
 date: 2019-08-17 08:28:00 -0400
 featured-img: /img/post-images/scorched-earth.jpg
 # categories: [Flatiron School, portfolio projects]
-tags: [software engineering, projects, Ruby, Rails, quitting, restarting]
+tags: [women in tech, WiT, tech, software development, Ruby, Rails, projects, quitting, restarting]
 excerpt: <p>Sometimes quitting can be a good thing.</p>
 ---
 
