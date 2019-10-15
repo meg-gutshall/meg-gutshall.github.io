@@ -60,8 +60,6 @@ So how does `self` know when to change the object it’s referencing? Two ways:
 1. The first being context as we have previous discussed above.
 2. The second being a built-in rule for this reserved word: **_one and only one `self` will exist at any given time in the program._** There will never be a case in which `self` will refer to more than one object at a time, therefore leaving it up to context to determine what `self` actually means at any given point in the program.
 
-<!-- vv Check this entire example. vv -->
-
 I know, that’s a lot of information and your head is probably spinning by now, but let’s do one more example of `self`. I’ll walk you through it!
 
 ```ruby
