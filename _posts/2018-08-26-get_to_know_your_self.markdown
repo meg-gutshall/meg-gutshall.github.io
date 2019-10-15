@@ -50,7 +50,9 @@ We next see `self` on Line 10 in the `self.all` class method. This is a class me
 
 ```ruby
 AfroPet.all
-#=> [#<AfroPet:0x000055b7db32c9c0 @species="Hippopotamouse">, #<AfroPet:0x000055b7db32c970 @species="Eleham">, #<AfroPet:0x000055b7db32c920 @species="Giraffet Hound">]
+#=> [#<AfroPet:0x000055b7db32c9c0 @species="Hippopotamouse">,
+     #<AfroPet:0x000055b7db32c970 @species="Eleham">,
+     #<AfroPet:0x000055b7db32c920 @species="Giraffet Hound">]
 ```
 
 After typing `AfroPet.all` in our terminal, it returns an array containing our three previously-instantiated `AfroPet` objects, showing that the program recognizes that in this case, `self` is referring to the `AfroPet` class. We know this because the recipient of this particular "message" (or any class method as denoted with the `self.` prefix before the method name) is the class itself, which means that `self` is **_not_** scoped to any particular instance, but to the _class_ instead.
@@ -81,7 +83,11 @@ class Creamery
   end
 
   def self.all_creamery_flavors
-    @@all.each {|creamery| creamery.creamery_flavors.each {|flavor| puts "#{creamery.creamery_name} " + flavor}}
+    @@all.each do |creamery|
+      creamery.creamery_flavors.each do |flavor|
+        puts "#{creamery.creamery_name} " + flavor
+      end
+    end
   end
 end
 
@@ -127,7 +133,9 @@ Creamery.all_creamery_flavors
 "Hershey's Strawberry"
 "Nelson's Graham Slam"
 
-#=> [#<Creamery:0x00005558bceb7e08 @creamery_name="Ben and Jerry's", @ice_cream_flavor="Oat of this Swirled", @creamery_flavors=["Chunky Monkey", "Chubby Hubby", "Oat of this Swirled"]>, #<Creamery:0x00005558bceb7d68 @creamery_name="Hershey's", @ice_cream_flavor="Strawberry", @creamery_flavors=["Chocolate", "Vanilla", "Strawberry"]>, #<Creamery:0x00005558bceb7cc8 @creamery_name="Nelson's", @ice_cream_flavor="Graham Slam", @creamery_flavors=["Graham Slam"]>]
+#=> [#<Creamery:0x00005558bceb7e08 @creamery_name="Ben and Jerry's", @ice_cream_flavor="Oat of this Swirled", @creamery_flavors=["Chunky Monkey", "Chubby Hubby", "Oat of this Swirled"]>,
+     #<Creamery:0x00005558bceb7d68 @creamery_name="Hershey's", @ice_cream_flavor="Strawberry", @creamery_flavors=["Chocolate", "Vanilla", "Strawberry"]>,
+     #<Creamery:0x00005558bceb7cc8 @creamery_name="Nelson's", @ice_cream_flavor="Graham Slam", @creamery_flavors=["Graham Slam"]>]
 ```
 
 You just learned `self`! If you feel you have a good grasp of the concept of `self`, celebrate with a scoop of your favorite ice cream! If not, check out the following helpful resources:
