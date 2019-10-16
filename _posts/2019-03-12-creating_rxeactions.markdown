@@ -19,7 +19,7 @@ I really wish I would have had the foresight at the time to write down my prescr
 
 ### Delay
 
-I had a really difficult time starting this project. I think it was a combination of a few things. The last three labs in Flatiron's Sinatra section of the curriculum-[Playlister](https://github.com/meg-gutshall/playlister-sinatra-v-000), [NYC Landmarks](https://github.com/meg-gutshall/nyc-sinatra-v-000), and [Fwitter](https://github.com/meg-gutshall/sinatra-fwitter-group-project-v-000)-were just _ridiculously_ hard. I got totally burnt out from them so by the time I finished those I was mentally exhausted. Also after I finished Fwitter, I didn't get an email from the project lead for another four days! When I asked him about it, he told me about the process the project leads have to go through to see which students are at the project and it's just really jacked up. Flatiron School's logistics and operations department needs to get their shit together. They're churning out these excellent programmers–why are they not having them build out solutions for their own use as well? It just doesn't make any sense to me why they are using sub-par third-party tools when former students can make them exactly what they need. Okay, rant over.
+I had a really difficult time starting this project. I think it was a combination of a few things. The last three labs in Flatiron's Sinatra section of the curriculum—[Playlister](https://github.com/meg-gutshall/playlister-sinatra-v-000), [NYC Landmarks](https://github.com/meg-gutshall/nyc-sinatra-v-000), and [Fwitter](https://github.com/meg-gutshall/sinatra-fwitter-group-project-v-000)—were just _ridiculously_ hard. I got totally burnt out from them so by the time I finished those I was mentally exhausted. Also after I finished Fwitter, I didn't get an email from the project lead for another four days! When I asked him about it, he told me about the process the project leads have to go through to see which students are at the project and it's just really jacked up. Flatiron School's logistics and operations department needs to get their shit together. They're churning out these excellent programmers—why are they not having them build out solutions for their own use as well? It just doesn't make any sense to me why they are using sub-par third-party tools when former students can make them exactly what they need. Okay, rant over.
 
 ### Design
 
@@ -29,7 +29,7 @@ I designed my app to act as a digital journal that allows users to privately tra
 
 The `environment.rb` file is where we load all of the app's dependencies, from gems to database connections. Some Ruby gems that I decided to use were `BCrypt` for password hashing and `Sinatra Flash` to display error messages. The `config.ru` file details to Rack the environment requirements of the app and then runs the app. The `Rakefile` is where the app's rake tasks are defined. The only custom task defined in my app's `Rakefile` is `rake console`, which starts a new session in `Pry`.
 
-For more detailed information on the aforementioned files and how they interact, see my blog post [What's Up With That!?: SINATRA_ENV](http://feralcodephilly.com/whats_up_with_that_sinatra_env.html).
+For more detailed information on the aforementioned files and how they interact, see my blog post [What's Up With That!?: SINATRA_ENV](https://meghangutshall.com/2019/02/15/whats_up_with_that_sinatra_env/).
 
 ## The Build
 
