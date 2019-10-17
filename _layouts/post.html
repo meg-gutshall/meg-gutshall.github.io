@@ -13,12 +13,12 @@ type: posts
 
                 <ul class="pager">
                     {% if page.previous.url %}
-                    <li class="previous">
+                    <li class="previous top-index">
                         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
                     </li>
                     {% endif %}
                     {% if page.next.url %}
-                    <li class="next">
+                    <li class="next bottom-index">
                         <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
                     </li>
                     {% endif %}
