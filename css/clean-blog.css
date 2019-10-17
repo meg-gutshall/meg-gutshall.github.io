@@ -547,14 +547,6 @@ form .row:first-child .floating-label-form-group {
   margin: 3rem 0;
 }
 
-.pager li.top-index > a {
-  margin: 3rem 0 4rem 0;
-}
-
-.pager li.bottom-index > a {
-  margin: 3rem 0 2rem 0;
-}
-
 .pager li > a,
 .pager li > span {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -565,15 +557,6 @@ form .row:first-child .floating-label-form-group {
   padding: 1rem 0.5rem;
   background-color: white;
   border-radius: 0;
-}
-
-/* Medium devices (tablets, less than 992px) and up */
-@media only screen and (min-width: 768px) {
-  .pager li > a,
-  .pager li > span {
-    font-size: 0.7em;
-    padding: 0.75em 1.25em;
-  }
 }
 
 .pager li > a:hover,
@@ -590,6 +573,26 @@ form .row:first-child .floating-label-form-group {
   color: #808080;
   background-color: #404040;
   cursor: not-allowed;
+}
+
+/* Medium devices (tablets, less than 992px) and up */
+@media only screen and (min-width: 768px) {
+  .pager li > a,
+  .pager li > span {
+    font-size: 0.7em;
+    padding: 0.75em 1.25em;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) and down */
+@media only screen and (max-width: 767.98px) {
+  .pager li.top-index > a {
+    margin: 3em 0 4em 0;
+  }
+
+  .pager li.bottom-index > a {
+    margin: 3em 0 2em 0;
+  }
 }
 
 /* Selection */
