@@ -23,7 +23,7 @@ article.main-content {
 @media only screen and (max-width: 767.98px) {
   div.container.main-content,
   article.main-content {
-    margin-top: 3em;
+    margin-top: 2.5em;
   }
 }
 
@@ -587,11 +587,11 @@ form .row:first-child .floating-label-form-group {
 /* Small devices (landscape phones, less than 768px) and down */
 @media only screen and (max-width: 767.98px) {
   .pager.top-index li > a {
-    margin: 1.5em 0 2em 0;
+    margin: 0.75em 0 1em 0;
   }
 
   .pager.bottom-index li > a {
-    margin: 1.5em 0 1em 0;
+    margin: 1.5em 0 .4em 0;
   }
 }
 
