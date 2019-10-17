@@ -185,6 +185,7 @@ hr.small {
   color: white;
 }
 
+/* Medium devices (tablets, less than 992px) and up */
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
@@ -256,6 +257,7 @@ hr.small {
     1px 1px 0 rgba(0, 128, 128, 0.8);
 }
 
+/* Medium devices (tablets, less than 992px) and up */
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     background: transparent;
@@ -352,7 +354,8 @@ hr.small {
 
 }
 
-@media only screen and (max-width: 767px) {
+/* Small devices (landscape phones, less than 768px) and down */
+@media only screen and (max-width: 767.98px) {
   div#nav-position {
     position: relative;
   }
@@ -413,6 +416,7 @@ hr.small {
   color: #001B24;
 }
 
+/* Medium devices (tablets, less than 992px) and up */
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 1.8em;
@@ -547,6 +551,7 @@ form .row:first-child .floating-label-form-group {
   border-radius: 0;
 }
 
+/* Medium devices (tablets, less than 992px) and up */
 @media only screen and (min-width: 768px) {
   .pager li > a,
   .pager li > span {
