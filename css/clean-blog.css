@@ -127,7 +127,6 @@ hr.small {
 .intro-header .site-heading,
 .intro-header .page-heading {
   text-align: center;
-  margin-bottom: 3rem;
 }
 
 .intro-header .site-heading h1,
@@ -183,11 +182,6 @@ hr.small {
 }
 
 @media only screen and (min-width: 768px) {
-  .intro-header .site-heading,
-  .intro-header .page-heading {
-    margin-bottom: 0;
-  }
-
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
