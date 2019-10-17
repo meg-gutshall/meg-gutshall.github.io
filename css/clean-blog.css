@@ -21,7 +21,7 @@ div.container.main-content {
 
 @media only screen and (max-width: 767.98px) {
   div.container.main-content {
-    margin-top: 8rem;
+    margin-top: 5rem;
   }
 }
 
@@ -415,6 +415,10 @@ hr.small {
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
   color: #001B24;
+}
+
+.post-preview:last-child + hr {
+  display: none;
 }
 
 /* Medium devices (tablets, less than 992px) and up */
