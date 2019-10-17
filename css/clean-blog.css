@@ -19,6 +19,12 @@ div.container.main-content {
   margin-top: 3rem;
 }
 
+@media only screen and (max-width: 767.98px) {
+  div.container.main-content {
+    margin-top: 8rem;
+  }
+}
+
 /* Code and Code Blocks */
 
 code {
