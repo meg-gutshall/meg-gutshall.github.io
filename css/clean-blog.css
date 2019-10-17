@@ -360,11 +360,6 @@ hr.small {
     position: relative;
   }
 
-  div.main-content,
-  article.main-content {
-    margin-top: 5rem;
-  }
-
   .navbar-custom .nav li a {
     color: #550055;
   }
