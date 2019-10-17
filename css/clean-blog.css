@@ -531,12 +531,16 @@ form .row:first-child .floating-label-form-group {
 
 /* Pagers */
 
-.pager {
-  margin: 2rem 0 0;
+.top-pager {
+  margin: 3rem 0;
 }
 
-.pager li > a,
-.pager li > span {
+.bottom-pager {
+  margin: 3rem 0;
+}
+
+.top-pager li > a, .bottom-pager li > a,
+.top-pager li > span, .bottom-pager li > span {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -548,24 +552,24 @@ form .row:first-child .floating-label-form-group {
 }
 
 @media only screen and (min-width: 768px) {
-  .pager li > a,
-  .pager li > span {
+  .top-pager li > a, .bottom-pager li > a,
+  .top-pager li > span, .bottom-pager li > span {
     font-size: 0.7em;
     padding: 0.75em 1.25em;
   }
 }
 
-.pager li > a:hover,
-.pager li > a:focus {
+.top-pager li > a:hover, .bottom-pager li > a:hover,
+.top-pager li > a:focus, .bottom-pager li > a:focus {
   color: white;
   background-color: #006080;
   border: 1px solid #006080;
 }
 
-.pager .disabled > a,
-.pager .disabled > a:hover,
-.pager .disabled > a:focus,
-.pager .disabled > span {
+.top-pager .disabled > a, .bottom-pager .disabled > a,
+.top-pager .disabled > a:hover, .bottom-pager .disabled > a:hover,
+.top-pager .disabled > a:focus, .bottom-pager .disabled > a:focus,
+.top-pager .disabled > span, .bottom-pager .disabled > span {
   color: #808080;
   background-color: #404040;
   cursor: not-allowed;
