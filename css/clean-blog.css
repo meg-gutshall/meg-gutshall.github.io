@@ -15,6 +15,10 @@ body {
 	-webkit-tap-highlight-color: #006080;
 }
 
+div.container.main-content {
+  margin-top: 3rem;
+}
+
 /* Code and Code Blocks */
 
 code {
