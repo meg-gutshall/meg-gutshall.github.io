@@ -15,12 +15,14 @@ body {
 	-webkit-tap-highlight-color: #006080;
 }
 
-div.container.main-content {
+div.container.main-content,
+article.main-content {
   margin-top: 3rem;
 }
 
 @media only screen and (max-width: 767.98px) {
-  div.container.main-content {
+  div.container.main-content,
+  article.main-content {
     margin-top: 5rem;
   }
 }
