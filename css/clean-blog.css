@@ -370,6 +370,7 @@ hr.small {
 
   .navbar-custom .nav li a {
     color: #550055;
+    text-shadow: none;
   }
 
   .navbar-custom .nav li a:hover,
