@@ -546,11 +546,11 @@ form .row:first-child .floating-label-form-group {
   margin: 3rem 0;
 }
 
-.pager > .top-index {
+.pager li.top-index > a {
   margin: 3rem 0 4rem 0;
 }
 
-.pager > .bottom-index {
+.pager li.bottom-index > a {
   margin: 3rem 0 2rem 0;
 }
 
