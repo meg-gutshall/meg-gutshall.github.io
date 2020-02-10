@@ -56,7 +56,7 @@ ENV["SINATRA_ENV"] ||= "development"
 
 Again, we see our `"SINATRA_ENV"` being defined. In order to maintain DRY code, I removed Line 1 from the `Rakefile` and all my tests for the lab still passed without any failures.
 
-### Lines 3-4
+### Lines 3–4
 
 ```ruby
 require 'bundler/setup'
@@ -65,7 +65,7 @@ Bundler.require(:default, ENV['SINATRA_ENV'])
 
 On Lines 3 and 4 we require our gems and dependencies. Line 3 finds our `Gemfile` and makes all the gems contained within (plus their dependencies) available to Ruby by adding them to the load path. On Line 4, we’re requiring all of our gems (`:default` represents all gems since we didn’t create gem groups for this app) as well as our deployment environment hash to be used with the Active Record gem.
 
-### Lines 6-9
+### Lines 6–9
 
 ```ruby
 ActiveRecord::Base.establish_connection(
@@ -98,7 +98,7 @@ require './config/environment'
 
 Again, this loads our app’s `environment.rb` file. Notice the difference between this line and Line 3 in our `Rakefile`? Both do the same thing, they just require the `environment.rb` file in different ways.
 
-### Lines 3-5
+### Lines 3–5
 
 ```ruby
 if ActiveRecord::Migrator.needs_migration?
@@ -116,7 +116,7 @@ use Rack::MethodOverride
 
 `Rack::MethodOverride` is a piece of Sinatra Middleware that intercepts every request run by our application. It will interpret any requests with `name="_method"` by translating the request to whatever is set by the `value` attribute—normally `PATCH` or `DELETE` for purposes in our Sinatra curriculum. This line must be placed in the `config.ru` file above all controllers in which you want access to the Middleware's functionality.
 
-### Lines 9-13
+### Lines 9–13
 
 ```ruby
 Dir[File.join(File.dirname(__FILE__), "app/controllers", "*.rb")].collect {|file| File.basename(file).split(".")[0] }.reject {|file| file == "application_controller" }.each do |file|
@@ -156,7 +156,7 @@ As we can see on Line 1, our `ENV["SINATRA_ENV"]` is being set equal to `"test"`
 
 Lines 4 through 6 require gems related to testing.
 
-### Lines 8-10
+### Lines 8–10
 
 ```ruby
 if ActiveRecord::Migrator.needs_migration?
