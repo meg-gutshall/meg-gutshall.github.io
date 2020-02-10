@@ -114,7 +114,7 @@ Lines 3 through 5 check to make sure our migrations have been run. If not, the e
 use Rack::MethodOverride
 ```
 
-`Rack::MethodOverride` is a piece of Sinatra Middleware that intercepts every request run by our application. It will interpret any requests with `name="_method"` by translating the request to whatever is set by the `value` attribute-normally `PATCH` or `DELETE` for purposes in our Sinatra curriculum. This line must be placed in the `config.ru` file above all controllers in which you want access to the Middleware's functionality.
+`Rack::MethodOverride` is a piece of Sinatra Middleware that intercepts every request run by our application. It will interpret any requests with `name="_method"` by translating the request to whatever is set by the `value` attribute—normally `PATCH` or `DELETE` for purposes in our Sinatra curriculum. This line must be placed in the `config.ru` file above all controllers in which you want access to the Middleware's functionality.
 
 ### Lines 9-13
 
