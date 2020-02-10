@@ -152,7 +152,7 @@ When we run `learn` to test our app, this triggers the gem RSpec, which will run
 ENV["SINATRA_ENV"] = "test"
 ```
 
-As we can see on Line 1, our `ENV["SINATRA_ENV"]` is being set equal to `"test"` so that when we go to our `environment.rb` file as directed on Line 3, `ENV["SINATRA_ENV"]` is already assigned a value and, therefore, does not take on the value of `"development"`. This means that on Line 4 of our `environment.rb` file, the deployment environment hash dependency has the value of `"test"` and on Line 8, we are establishing a connection with a different database entirely-`db/test.sqlite`! This database contains seed data to match the expected test outputs.
+As we can see on Line 1, our `ENV["SINATRA_ENV"]` is being set equal to `"test"` so that when we go to our `environment.rb` file as directed on Line 3, `ENV["SINATRA_ENV"]` is already assigned a value and, therefore, does not take on the value of `"development"`. This means that on Line 4 of our `environment.rb` file, the deployment environment hash dependency has the value of `"test"` and on Line 8, we are establishing a connection with a different database entirely—`db/test.sqlite`! This database contains seed data to match the expected test outputs.
 
 Lines 4 through 6 require gems related to testing.
 
