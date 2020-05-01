@@ -1,6 +1,6 @@
 # Site settings
 author: Meg Gutshall
-title: meghangutshall.com
+title: Explicit Code Studio
 header-img: img/home-bg.png
 email: meghan.gutshall@gmail.com
 copyright_name: Meg Gutshall
@@ -9,14 +9,12 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: meg_gutshall
 github_username:  meg-gutshall
-linkedin_username: meghan-gutshall
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-paginate: 6
+paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 gems: [jekyll-paginate, jekyll-feed]
-paginate_path: "/blog/page:num/"
