@@ -1,12 +1,14 @@
 ---
 layout: post
 title: "Get to Know Your Self (Refactored)"
-date: 2018-08-26 13:23:53 -0400
+date: 2019-10-16 13:23:53 -0400
 featured-img: /img/post-images/eleham.jpg
 # categories: [Flatiron School]
 tags: [women in tech, WiT, tech, software development, Ruby, reserved words]
 excerpt: <p>While Ruby is an incredibly user-friendly language, it’s not without its conundrums&mdash;one in particular being <code>self</code>. <code>self</code> is a Ruby reserved word that can be scoped to any class or instance of a class. This enables developers to contextually reference a particular instance or class&mdash;depending on what the needs are for their program&mdash;without using a specific variable name. It's not hard to see how this could quickly become confusing. Read on to walk through some simple examples and gain a better understanding of the concept of <code>self</code>.</p>
 ---
+
+*This post was originally published on August 26, 2018 and since ["refactored"](https://twitter.com/ThePracticalDev/status/1184380969576534019).*
 
 While Ruby is an incredibly user-friendly language, it’s not without its conundrums—one in particular: `self`. `self` is a Ruby reserved word, or a word specifically designed to have a special meaning in the Ruby language. The scope (or program visibility) of `self` is any class or instance of a class, which we can also refer to as an `object`. This means that `self` can enable developers to contextually reference a particular class or instance of a class—depending on what the needs are for their program—without using a specific variable name.
 
