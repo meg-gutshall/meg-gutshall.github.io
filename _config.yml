@@ -8,13 +8,13 @@ description: > # this means to ignore newlines until "baseurl:"
   The unedited thoughts of an unconventional programmer
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: meg_gutshall
-github_username:  meg-gutshall
+github_username: meg-gutshall
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: ["less","Gruntfile.js","package.json","README.md"]
 
 # Gem configuration settings
 paginate: 6
