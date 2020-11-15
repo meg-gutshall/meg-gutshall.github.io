@@ -24,7 +24,7 @@ I wanted to create a web app that would enable Flatiron students in the online s
 
 I decided to create three models for this project: `User`, `Upvote`, and `Req`.
 
-_**Confession Time:** Okay, truthfully my original app used the model name `Request` instead of `Req`, but when I got to the frontend part of my project I hit a major issue. I had errors popping up all over my console and had **no idea** where they were coming from! Then I got the idea to look up JavaScript's reserved words and—what do you know—`Request` is one of them! I changed it because I didn't want to use examples of bad code through my blog post. I promise the rest of this post is all factually accurate, exactly as it happened!_
+>_**Confession Time:** Okay, truthfully my original app used the model name `Request` instead of `Req`, but when I got to the frontend part of my project I hit a major issue. I had errors popping up all over my console and had **no idea** where they were coming from! Then I got the idea to look up JavaScript's reserved words and—what do you know—`Request` is one of them! I changed it because I didn't want to use examples of bad code through my blog post. I promise the rest of this post is all factually accurate, exactly as it happened!_
 
 Below, you can see my model map which contains each model's attributes and associations.
 
@@ -44,7 +44,7 @@ class User < ApplicationRecord
 end
 ```
 
-_**NOTE:**_ You **must** define the enum attribute's values in the model _before_ adding the enum attribute to the model in the database (aka running a migration). In other words, run your migrations for the model as normal _except_ leave out the enum attribute. Then in the model file, define the enum attribute's values as shown in the example above. Now run another migration adding the enum attribute to your model as an `integer` value. It's a good idea to set the default value to `0` as well so that each new instance of the model automatically takes on the first value in the enum attribute's list of values. Below is the migration code I used to add `role` as an enum attribute _**after**_ I created my `User` model and defined `role`'s attribute values.
+>_**NOTE:**_ You **must** define the enum attribute's values in the model _before_ adding the enum attribute to the model in the database (aka running a migration). In other words, run your migrations for the model as normal _except_ leave out the enum attribute. Then in the model file, define the enum attribute's values as shown in the example above. Now run another migration adding the enum attribute to your model as an `integer` value. It's a good idea to set the default value to `0` as well so that each new instance of the model automatically takes on the first value in the enum attribute's list of values. Below is the migration code I used to add `role` as an enum attribute _**after**_ I created my `User` model and defined `role`'s attribute values.
 
 ```ruby
 # app/db/migrate/date_add_role_to_users.rb
