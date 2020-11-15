@@ -8,6 +8,12 @@ tags: [Rails API, JWT, JSON Web Tokens, authorization]
 excerpt: <p>Excerpt</p>
 ---
 
+For my fourth portfolio project for what is beginning to feel like my tenure as a student at Flatiron School, I decided to create a tool specifically for my particular track of the Flatiron community (at least that's what my project started out as, but I'll save _that_ story for a different blog post.) You see, I'm enrolled in Flatiron School's online software engineering self-paced track and unlike the part-time and full-time cohorts, we aren't beholden to a set schedule where we have to keep up with the group and week to week. Instead, self-paced students have a 15-month period to complete their coursework and graduate, after which they can purchase time extensions. I feel extremely lucky to have began my coursework at Flatiron when I did because when I enrolled, I wasn't beholden to a time limit—which is the main reason I'm still here today, steadily working through the curriculum. I like to jokingly refer to myself as a "lifer." :D
+
+Being a self-paced student has its pros and cons, but the main subject pertaining to this project is the support we receive from our instructors. When I began this project, we had a team of four dedicated self-paced instructors sharing the duties of holding office hours and conducting topic-based lectures, among other tasks. These sessions were held live over Zoom to enable student interaction and the topic-based lectures were almost always recorded for students to refer back to later or for those who couldn't attend the original study group session. I had some _**incredible**_ learning experiences in these study groups that I absolutely **never** could have had by watching a video recording alone. Actually, the very fact that Flatiron School provided these study groups was a huge influence in my decision to enroll in their bootcamp over another I was considering.
+
+Since these sessions impact by learning experience so profoundly, when I had an idea to create a tool that would fulfill the requirements of the curriculum's fourth portfolio project and add value to Flatiron's self-paced student community, I got to work!
+
 ## The Project
 
 _First paragraph is a brief overview of my JS project and what models it uses, which brings me to users and authentication._
