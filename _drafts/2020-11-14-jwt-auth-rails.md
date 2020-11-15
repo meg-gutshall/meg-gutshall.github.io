@@ -46,7 +46,7 @@ The student logs into the web app using their Flatiron School credentials and is
 
 The study group dashboard has a sidebar which contains a list of Flatiron's software engineering curriculum modules. This is also how the requests are ordered. Instead of being grouped and ordered by date like Flatiron's study group dashboard, they're grouped and ordered by module. The students can either scroll through the dashboard or select an option from the sidebar to jump to that particular module. From there, they can click the "Upvote" button on requests they like to boost its popularity and leave an optional comment. The upvote will then appear at the top of the dashboard along with any requests they themselves have previously created.
 
-### Creating a New Request
+#### Creating a New Request
 
 Once the student has logged in, they'll see a "Create a New Request" button in the menu bar. Clicking this will open a modal form in which the student can input the request topic, select the appropriate module from a dropdown menu, and provide further information about the request in the description textarea field. Upon clicking "Submit", the modal clears, the study group dashboard scrolls to the module that was input in the form, and an alert triggers asking the student to check to make sure they're not submitting a duplicate request (the alternative being to upvote and leave a comment on the already existing request). The student then either opts to cancel their request, edit their request, or submit their request as is. Their request will then appear at the top of the dashboard along with any upvotes they've created on other students' requests.
 
