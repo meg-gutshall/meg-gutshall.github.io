@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "JWT Auth Rails"
-date: 2020-11-14 23:28:00 -0400
+title: "The Original Idea"
+date: 2020-11-15 23:28:00 -0400
 featured-img: /img/post-images/model-map-v1.jpg
 # categories: [Flatiron School]
-tags: [Rails API, JWT, JSON Web Tokens, authorization]
+tags: [Rails API, vanilla JavaScript, vanilla JS, JavaScript, JS, APIs]
 excerpt: <p>Excerpt</p>
 ---
 
@@ -14,15 +14,15 @@ Being a self-paced student has its pros and cons, but the main subject pertainin
 
 Since these sessions impact by learning experience so profoundly, when I had an idea to create a tool that would fulfill the requirements of the curriculum's fourth portfolio project and add value to Flatiron's self-paced student community, I got to work!
 
-## The Project
+## The Original Idea
 
-_Write a brief overview of my JS project and what models it uses, which brings me to users and authentication._
+As I referred to in the first sentence of this post, right now I'm talking about my _**original**_ project idea, not what the finished product turned out to be ([sound familiar?](/2019/08/17/knowing_when_to_quit.md)). Keep that in mind as you read through the rest of this post.
 
-My original project idea was to create a web app that would enable Flatiron students in the online self-paced to track make study group topic requests. They would then be able to see all topic requests and upvote the ones they like. This way the Flatiron instructors would be able to better tell which topics their students need more support with and plan their study groups accordingly.
+I wanted to create a web app that would enable Flatiron students in the online self-paced to track make study group topic requests. They would then be able to see all topic requests and upvote the ones they like. This way the Flatiron instructors would be able to better tell which topics their students need more support with and plan their study groups accordingly.
 
-### App Models
+## App Models
 
-I originally decided to create three models for this project: `User`, `Upvote`, and `Req`.
+I decided to create three models for this project: `User`, `Upvote`, and `Req`.
 
 >_**Confession Time:** Okay, truthfully my original app used the model name `Request` instead of `Req`, but when I got to the frontend part of my project I hit a major issue. I had errors popping up all over my console and had **no idea** where they were coming from! Then I got the idea to look up JavaScript's reserved words and—what do you know—`Request` is one of them! I changed it because I didn't want to use examples of bad code through my blog post. I promise the rest of this post is all factually accurate, exactly as it happened!_
 
@@ -32,23 +32,25 @@ Below, you can see my model map which contains each model's attributes and assoc
 
 There's one thing I want to highlight in the `User` model before we move on. Since this app is meant to be used by different types of users, I created a user enum attribute called `role`, which assigns the user one of the roles I predefined: `student`, `instructor`, or `super_admin`. This allows the different types of uses to interact with the app in different ways depending on which `role` they've been assigned. I won't go into enums in this post, but in the future I plan to write about this handy type of attribute and its many uses.
 
-### The Look and Feel
+## The Look and Feel
 
 Since this app was targeting a definite group of people—online self-paced software engineering students at Flation School—I decided to model its functioning after Flatiron's Learn.co curriculum platform, specifically their login functionality, curriculum topics, and study group dashboard.
 
-### User Flow
+## User Flow
 
 In my mind, the user flow would go something like this:
 
 The student logs into the web app using their Flatiron School credentials and is immediately directed to the study group dashboard. From there, they have the ability to navigate the app to view other students' requests or create their own request.
 
-#### Navigating the App
+### Navigating the App
 
 The study group dashboard has a sidebar which contains a list of Flatiron's software engineering curriculum modules. This is also how the requests are ordered. Instead of being grouped and ordered by date like Flatiron's study group dashboard, they're grouped and ordered by module. The students can either scroll through the dashboard or select an option from the sidebar to jump to that particular module. From there, they can click the "Upvote" button on requests they like to boost its popularity and leave an optional comment. The upvote will then appear at the top of the dashboard along with any requests they themselves have previously created.
 
-#### Creating a New Request
+### Creating a New Request
 
 Once the student has logged in, they'll see a "Create a New Request" button in the menu bar. Clicking this will open a modal form in which the student can input the request topic, select the appropriate module from a dropdown menu, and provide further information about the request in the description textarea field. Upon clicking "Submit", the modal clears, the study group dashboard scrolls to the module that was input in the form, and an alert triggers asking the student to check to make sure they're not submitting a duplicate request (the alternative being to upvote and leave a comment on the already existing request). The student then either opts to cancel their request, edit their request, or submit their request as is. Their request will then appear at the top of the dashboard along with any upvotes they've created on other students' requests.
+
+<!-- Separate out JWT Auth Rails post below -->
 
 ## The Point
 
