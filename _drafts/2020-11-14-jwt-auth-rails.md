@@ -43,55 +43,6 @@ For some odd reason the lesson does not include instructions on how to logout an
 
 _Sum up all that was covered in this blog post and important parts of the lesson itself that were highlighted._
 
-## Bonus: Implementing a Logout
-
-For some odd reason the lesson does not include instructions on how to logout and they're _really_ difficult to find online.
-
-- Clear the browser's local storage
-- Send a DELETE fetch to the backend to clear the session
-
-## Bonus: Implementing a Logout
-
-For some odd reason the lesson does not include instructions on how to logout and they're _really_ difficult to find online.
-
-- Clear the browser's local storage
-- Send a DELETE fetch to the backend to clear the session
-
-## Bonus: Implementing a Logout
-
-For some odd reason the lesson does not include instructions on how to logout and they're _really_ difficult to find online.
-
-- Clear the browser's local storage
-- Send a DELETE fetch to the backend to clear the session
-
-## Bonus: Implementing a Logout
-
-For some odd reason the lesson does not include instructions on how to logout and they're _really_ difficult to find online.
-
-- Clear the browser's local storage
-- Send a DELETE fetch to the backend to clear the session
-
-## Bonus: Implementing a Logout
-
-For some odd reason the lesson does not include instructions on how to logout and they're _really_ difficult to find online.
-
-- Clear the browser's local storage
-- Send a DELETE fetch to the backend to clear the session
-
-## Bonus: Implementing a Logout
-
-For some odd reason the lesson does not include instructions on how to logout and they're _really_ difficult to find online.
-
-- Clear the browser's local storage
-- Send a DELETE fetch to the backend to clear the session
-
-## Bonus: Implementing a Logout
-
-For some odd reason the lesson does not include instructions on how to logout and they're _really_ difficult to find online.
-
-- Clear the browser's local storage
-- Send a DELETE fetch to the backend to clear the session
-
 ## Sources
 
 - [JWT Auth Rails]
