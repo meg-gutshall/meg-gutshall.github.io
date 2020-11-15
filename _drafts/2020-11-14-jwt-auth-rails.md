@@ -2,7 +2,7 @@
 layout: post
 title: "JWT Auth Rails"
 date: 2020-11-14 23:28:00 -0400
-featured-img: /img/post-images/cash.jpg
+featured-img: /img/post-images/model-map-v1.jpg
 # categories: [Flatiron School]
 tags: [Rails API, JWT, JSON Web Tokens, authorization]
 excerpt: <p>Excerpt</p>
@@ -16,7 +16,31 @@ Since these sessions impact by learning experience so profoundly, when I had an 
 
 ## The Project
 
-_First paragraph is a brief overview of my JS project and what models it uses, which brings me to users and authentication._
+_Write a brief overview of my JS project and what models it uses, which brings me to users and authentication._
+
+My original project idea was to create a web app that would enable Flatiron students in the online self-paced to track make study group topic requests. They would then be able to see all topic requests and upvote the ones they like. This way the Flatiron instructors would be able to better tell which topics their students need more support with and plan their study groups accordingly.
+
+### App Models
+
+I originally decided to create three models for this project: `User`, `Upvote`, and `Req`.
+
+>_**Confession Time:** Okay, truthfully my original app used the model name `Request` instead of `Req`, but when I got to the frontend part of my project I hit a major issue. I had errors popping up all over my console and had **no idea** where they were coming from! Then I got the idea to look up JavaScript's reserved words and—what do you know—`Request` is one of them! I changed it because I didn't want to use examples of bad code through my blog post. I promise the rest of this post is all factually accurate, exactly as it happened!_
+
+Below, you can see my model map. I'll write a brief description of each model for context.
+
+![Model Map (v1)](/img/post-images/model-map-v1.jpg)
+
+#### Req
+
+#### Upvote
+
+#### User
+
+### User Flow
+
+The app flow would look something like this:
+
+- The student would create a request with a topic and a description.
 
 I knew I was going to be implementing a User model in my app, so on the advice of one of my codepanions (s/o to Sushi!), I followed [Flatiron School's Jwt Auth Rails lesson][JWT Auth Rails] step-by-step and got it working relatively easily. Well... okay, I did run into a teensy snag along the way, but a quick stop-in at JavaScript Project Office Hours with the infallible Alice Balbuena helped me sort that out right quick and I was on my way to building out the rest of my project!
 
