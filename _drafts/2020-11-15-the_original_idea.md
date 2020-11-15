@@ -20,17 +20,43 @@ As I referred to in the first sentence of this post, right now I'm talking about
 
 I wanted to create a web app that would enable Flatiron students in the online self-paced to track make study group topic requests. They would then be able to see all topic requests and upvote the ones they like. This way the Flatiron instructors would be able to better tell which topics their students need more support with and plan their study groups accordingly.
 
-## App Models
+## Models
 
 I decided to create three models for this project: `User`, `Upvote`, and `Req`.
 
->_**Confession Time:** Okay, truthfully my original app used the model name `Request` instead of `Req`, but when I got to the frontend part of my project I hit a major issue. I had errors popping up all over my console and had **no idea** where they were coming from! Then I got the idea to look up JavaScript's reserved words and—what do you know—`Request` is one of them! I changed it because I didn't want to use examples of bad code through my blog post. I promise the rest of this post is all factually accurate, exactly as it happened!_
+_**Confession Time:** Okay, truthfully my original app used the model name `Request` instead of `Req`, but when I got to the frontend part of my project I hit a major issue. I had errors popping up all over my console and had **no idea** where they were coming from! Then I got the idea to look up JavaScript's reserved words and—what do you know—`Request` is one of them! I changed it because I didn't want to use examples of bad code through my blog post. I promise the rest of this post is all factually accurate, exactly as it happened!_
 
 Below, you can see my model map which contains each model's attributes and associations.
 
 ![Model Map (v1)](/img/post-images/model-map-v1.jpg)
 
-There's one thing I want to highlight in the `User` model before we move on. Since this app is meant to be used by different types of users, I created a user enum attribute called `role`, which assigns the user one of the roles I predefined: `student`, `instructor`, or `super_admin`. This allows the different types of uses to interact with the app in different ways depending on which `role` they've been assigned. I won't go into enums in this post, but in the future I plan to write about this handy type of attribute and its many uses.
+There's one thing I want to highlight in the `User` model before we move on. Since this app is meant to be used by different types of users, I created a user enum attribute called `role`, which assigns the user one of the roles I predefined: `student`, `instructor`, or `super_admin`. See example below:
+
+```ruby
+# app/models/user.rb
+
+class User < ApplicationRecord
+  enum role: [:student, :instructor, :super_admin]
+
+  # Alternatively you can use...
+  # enum role: { student: 0, instructor: 1, super_admin: 2 }
+  # This is a more explicit way of defining an enum attribute
+end
+```
+
+_**NOTE:**_ You **must** define the enum attribute's values in the model _before_ adding the enum attribute to the model in the database (aka running a migration). In other words, run your migrations for the model as normal _except_ leave out the enum attribute. Then in the model file, define the enum attribute's values as shown in the example above. Now run another migration adding the enum attribute to your model as an `integer` value. It's a good idea to set the default value to `0` as well so that each new instance of the model automatically takes on the first value in the enum attribute's list of values. Below is the migration code I used to add `role` as an enum attribute _**after**_ I created my `User` model and defined `role`'s attribute values.
+
+```ruby
+# app/db/migrate/date_add_role_to_users.rb
+
+class AddRoleToUsers < ActiveRecord::Migration[6.0]
+  def change
+    add_column :users, :role, :integer, default: 0
+  end
+end
+```
+
+Using the `role` enum attribute allows the different types of users to interact with the app in different ways depending on which `role` they've been assigned. I won't go any further into enums, but in the future I plan to write a more details post about this handy type of attribute and its many built-in methods.
 
 ## The Look and Feel
 
