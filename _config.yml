@@ -20,4 +20,4 @@ exclude: ["less","Gruntfile.js","package.json","README.md"]
 paginate: 6
 paginate_path: "/blog/page:num/"
 
-plugins: [jekyll-paginate, jekyll-feed]
+plugins: [jekyll-paginate, jekyll-feed, jemoji]
