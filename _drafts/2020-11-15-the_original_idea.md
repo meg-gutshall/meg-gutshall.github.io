@@ -113,13 +113,17 @@ As you can see in [the model map above][Model Map (v1)], `Upvote` acts as the jo
 
 ## The Look and Feel
 
-Since this app was targeting a definite group of people—online self-paced software engineering students at Flation School—I decided to model its functioning after Flatiron's Learn.co curriculum platform, specifically their login functionality, curriculum topics, and study group dashboard.
+Since this app was targeting a definite group of people—online self-paced software engineering students at Flation School—I decided to model it after Flatiron's Learn.co curriculum platform, specifically their login functionality, curriculum topics, and study group dashboard.
 
 ## User Flow
 
 In my mind, the user flow would go something like this:
 
-The student logs into the web app using their Flatiron School credentials and is immediately directed to the study group dashboard. From there, they have the ability to navigate the app to view other students' requests or create their own request.
+### Login
+
+The student logs into the web app using their Flatiron School credentials or GitHub OAuth and is immediately directed to the study group dashboard. From there, they have the ability to navigate the app to view other students' requests or create their own request.
+
+It's worth noting that creating any type of authentication system was by no means part of the project requirements, but the way my app was designed and modeled made it difficult to picture being used without it included.
 
 ### Navigating the App
 
@@ -128,5 +132,9 @@ The study group dashboard has a sidebar which contains a list of Flatiron's soft
 ### Creating a New Request
 
 Once the student has logged in, they'll see a "Create a New Request" button in the menu bar. Clicking this will open a modal form in which the student can input the request topic, select the appropriate module from a dropdown menu, and provide further information about the request in the description textarea field. Upon clicking "Submit", the modal clears, the study group dashboard scrolls to the module that was input in the form, and an alert triggers asking the student to check to make sure they're not submitting a duplicate request (the alternative being to upvote and leave a comment on the already existing request). The student then either opts to cancel their request, edit their request, or submit their request as is. Their request will then appear at the top of the dashboard along with any upvotes they've created on other students' requests.
+
+### Logout
+
+Also upon login, a "Logout" button will appear in the menu which the student can click to be logged out of the web app. Again, this is not part of the project requirements but if you have a login... you gotta have a logout too.
 
 [Model Map (v1)]: /img/post-images/model-map-v1.jpg "Model Map (v1)"
