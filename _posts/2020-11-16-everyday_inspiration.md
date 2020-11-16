@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Original Idea"
+title: "Everyday Inspiration"
 date: 2020-11-16 01:00:00 -0400
 featured-img: /img/post-images/model-map-v1.jpg
 # categories: [Flatiron School]
