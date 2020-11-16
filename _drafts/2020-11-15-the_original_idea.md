@@ -137,4 +137,8 @@ Once the student has logged in, they'll see a "Create a New Request" button in t
 
 Also upon login, a "Logout" button will appear in the menu which the student can click to be logged out of the web app. Again, this is not part of the project requirements but if you have a login... you gotta have a logout too.
 
+## In the End
+
+Ultimately, I did not go forward with this particular plan. There were several reasons why, which as I said earlier could be a blog post on its own—and maybe it will some day. Instead, I created a very similar app with almost identical functions, but instead the resulting study sessions are meant to be more of a "crowdsourced" type of activity. Hopefully I'll be able to find or create a community that will really embrace this idea of self-teaching and I can see where it goes. Until then, I plan to redesign my finished project to be more easily expandable and find something _slightly_ more sophisticated than vanilla JavaScript to use when building the frontend.
+
 [Model Map (v1)]: /img/post-images/model-map-v1.jpg "Model Map (v1)"
