@@ -5,7 +5,7 @@ date: 2020-11-15 23:28:00 -0400
 featured-img: /img/post-images/model-map-v1.jpg
 # categories: [Flatiron School]
 tags: [Rails API, vanilla JavaScript, vanilla JS, JavaScript, JS, APIs]
-excerpt: <p>Excerpt</p>
+excerpt: <p>Inspiration for great project ideas are often derived from your everyday activities. Think about the places you go, the services you use. What can be improved upon? What are they missing that might give them that little "extra something" to tip them over the edge of greatness? This post talks about an idea I had for one of my Flatiron School curriculum projects that was born from none other than the school's own learning platform.</p>
 ---
 
 For my fourth portfolio project for what is beginning to feel like my tenure as a student at Flatiron School, I decided to create a tool specifically for my particular track of the Flatiron community (at least that's what my project started out as, but I'll save _that_ story for a different blog post.) You see, I'm enrolled in Flatiron School's online software engineering self-paced track and unlike the part-time and full-time cohorts, we aren't beholden to a set schedule where we have to keep up with the group and week to week. Instead, self-paced students have a 15-month period to complete their coursework and graduate, after which they can purchase time extensions. I feel extremely lucky to have began my coursework at Flatiron when I did because when I enrolled, I wasn't beholden to a time limit—which is the main reason I'm still here today, steadily working through the curriculum. I like to jokingly refer to myself as a "lifer." :D
