@@ -28,7 +28,7 @@ Below, you can see my model map which contains each model's attributes and assoc
 
 >_**Confession Time:** Okay, truthfully my original app used the model name `Request` instead of `Req`, but when I got to the frontend part of my project I hit a major issue. I had errors popping up all over my console and had **no idea** where they were coming from! Then I got the idea to look up JavaScript's reserved words and—what do you know—`Request` is one of them! I changed it because I didn't want to use examples of bad code through my blog post. I promise the rest of this post is all factually accurate, exactly as it happened!_
 
-![Model Map (v1)]
+![model map]
 
 ### Enum Attributes
 
@@ -62,7 +62,7 @@ Using the `role` enum attribute allows the different types of users to interact 
 
 ### Associations
 
-As you can see in [the model map above][Model Map (v1)], `Upvote` acts as the join table between `Student` (an alias for `User`) and `Req`. This creates two types of student-owned requests:
+As you can see in the [model map] above, `Upvote` acts as the join table between `Student` (an alias for `User`) and `Req`. This creates two types of student-owned requests:
 
 1. When a `Student` creates a new `Req`
 
@@ -115,6 +115,8 @@ As you can see in [the model map above][Model Map (v1)], `Upvote` acts as the jo
 
 Since this app was targeting a definite group of people—online self-paced software engineering students at Flation School—I decided to model it after Flatiron's Learn.co curriculum platform, specifically their login functionality, curriculum topics, and study group dashboard.
 
+![Flatiron study group dashboard]
+
 ## User Flow
 
 In my mind, the user flow would go something like this:
@@ -141,4 +143,5 @@ Also upon login, a "Logout" button will appear in the menu which the student can
 
 Ultimately, I did not go forward with this particular plan. There were several reasons why, which as I said earlier could be a blog post on its own—and maybe it will some day. Instead, I created a very similar app with almost identical functions, but instead the resulting study sessions are meant to be more of a "crowdsourced" type of activity. Hopefully I'll be able to find or create a community that will really embrace this idea of self-teaching and I can see where it goes. Until then, I plan to redesign my finished project to be more easily expandable and find something _slightly_ more sophisticated than vanilla JavaScript to use when building the frontend.
 
-[Model Map (v1)]: /img/post-images/model-map-v1.jpg "Model Map (v1)"
+[model map]: /img/post-images/model-map-v1.jpg "Model Map (v1)"
+[Flatiron study group dashboard]: /img/post-images/fi-study-group-dashboard.jpg "Flatiron School's study group dashboard"
