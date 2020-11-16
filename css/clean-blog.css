@@ -103,24 +103,27 @@ hr.small {
 
 .about-intro {
   font-size: 1.4em;
-  font-weight: bold;
   text-align: center;
 }
 
 .pink {
   color: #a40080;
+  font-weight: bold;
 }
 
 .purple {
   color: #550055;
+  font-weight: bold;
 }
 
 .blue {
   color: #006080;
+  font-weight: bold;
 }
 
 .teal {
   color: #008080;
+  font-weight: bold;
 }
 
 /* Page Headers */
