@@ -24,11 +24,13 @@ I wanted to create a web app that would enable Flatiron students in the online s
 
 I decided to create three models for this project: `User`, `Upvote`, and `Req`.
 
->_**Confession Time:** Okay, truthfully my original app used the model name `Request` instead of `Req`, but when I got to the frontend part of my project I hit a major issue. I had errors popping up all over my console and had **no idea** where they were coming from! Then I got the idea to look up JavaScript's reserved words and—what do you know—`Request` is one of them! I changed it because I didn't want to use examples of bad code through my blog post. I promise the rest of this post is all factually accurate, exactly as it happened!_
-
 Below, you can see my model map which contains each model's attributes and associations.
 
-![Model Map (v1)](/img/post-images/model-map-v1.jpg)
+>_**Confession Time:** Okay, truthfully my original app used the model name `Request` instead of `Req`, but when I got to the frontend part of my project I hit a major issue. I had errors popping up all over my console and had **no idea** where they were coming from! Then I got the idea to look up JavaScript's reserved words and—what do you know—`Request` is one of them! I changed it because I didn't want to use examples of bad code through my blog post. I promise the rest of this post is all factually accurate, exactly as it happened!_
+
+![Model Map (v1)]
+
+### Enum Attributes
 
 There's one thing I want to highlight in the `User` model before we move on. Since this app is meant to be used by different types of users, I created a user enum attribute called `role`, which assigns the user one of the roles I predefined: `student`, `instructor`, or `super_admin`. See example below:
 
@@ -44,7 +46,7 @@ class User < ApplicationRecord
 end
 ```
 
->_**NOTE:**_ You **must** define the enum attribute's values in the model _before_ adding the enum attribute to the model in the database (aka running a migration). In other words, run your migrations for the model as normal _except_ leave out the enum attribute. Then in the model file, define the enum attribute's values as shown in the example above. Now run another migration adding the enum attribute to your model as an `integer` value. It's a good idea to set the default value to `0` as well so that each new instance of the model automatically takes on the first value in the enum attribute's list of values. Below is the migration code I used to add `role` as an enum attribute _**after**_ I created my `User` model and defined `role`'s attribute values.
+>_**NOTE:**_ You **must** define the enum attribute's values in the model _**before**_ adding the enum attribute to the model in the database (aka running a migration). In other words, run your migrations for the model as normal _except_ leave out the enum attribute. Then in the model file, define the enum attribute's values as shown in the example above. Now run another migration adding the enum attribute to your model as an `integer` value. It's a good idea to set the default value to `0` as well so that each new instance of the model automatically takes on the first value in the enum attribute's list of values. Below is the migration code I used to add `role` as an enum attribute _**after**_ I created my `User` model and defined `role`'s attribute values.
 
 ```ruby
 # app/db/migrate/date_add_role_to_users.rb
@@ -57,6 +59,57 @@ end
 ```
 
 Using the `role` enum attribute allows the different types of users to interact with the app in different ways depending on which `role` they've been assigned. I won't go any further into enums, but in the future I plan to write a more details post about this handy type of attribute and its many built-in methods.
+
+### Associations
+
+As you can see in [the model map above][Model Map (v1)], `Upvote` acts as the join table between `Student` (an alias for `User`) and `Req`. This creates two types of student-owned requests:
+
+1. When a `Student` creates a new `Req`
+
+    ```ruby
+      # app/models/user.rb
+
+      class User < ApplicationRecord
+        has_many :reqs, foreign_key: :student_id
+      end
+    ```
+
+    ```ruby
+      # app/models/req.rb
+
+      class Req < ApplicationRecord
+        belongs_to :student, class_name: "User"
+      end
+    ```
+
+2. When a `Student` creates an `Upvote` on an existing `Req`
+
+    ```ruby
+      # app/models/user.rb
+
+      class User < ApplicationRecord
+        has_many :upvotes, foreign_key: :student_id
+        has_many :upvoted_reqs, through: :upvotes, source: :reqs
+      end
+    ```
+
+    ```ruby
+      # app/models/upvote.rb
+
+      class Upvote < ApplicationRecord
+        belongs_to :student, class_name: "User"
+        belongs_to :req
+      end
+    ```
+
+    ```ruby
+      # app/models/req.rb
+
+      class Req < ApplicationRecord
+        has_many :upvotes
+        has_many :supporting_students, through: :upvotes, source: :student
+      end
+    ```
 
 ## The Look and Feel
 
@@ -75,3 +128,5 @@ The study group dashboard has a sidebar which contains a list of Flatiron's soft
 ### Creating a New Request
 
 Once the student has logged in, they'll see a "Create a New Request" button in the menu bar. Clicking this will open a modal form in which the student can input the request topic, select the appropriate module from a dropdown menu, and provide further information about the request in the description textarea field. Upon clicking "Submit", the modal clears, the study group dashboard scrolls to the module that was input in the form, and an alert triggers asking the student to check to make sure they're not submitting a duplicate request (the alternative being to upvote and leave a comment on the already existing request). The student then either opts to cancel their request, edit their request, or submit their request as is. Their request will then appear at the top of the dashboard along with any upvotes they've created on other students' requests.
+
+[Model Map (v1)]: /img/post-images/model-map-v1.jpg "Model Map (v1)"
