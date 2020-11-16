@@ -16,7 +16,7 @@ Since these sessions impact by learning experience so profoundly, when I had an 
 
 ## The Original Idea
 
-As I referred to in the first sentence of this post, right now I'm talking about my _**original**_ project idea, not what the finished product turned out to be ([sound familiar?](/2019/08/17/knowing_when_to_quit.md)). Keep that in mind as you read through the rest of this post.
+As I referred to in the first sentence of this post, right now I'm talking about my _**original**_ project idea, not what the finished product turned out to be ([sound familiar?](https://meghangutshall.com/2019/08/17/knowing_when_to_quit)). Keep that in mind as you read through the rest of this post.
 
 I wanted to create a web app that would enable Flatiron students in the online self-paced to track make study group topic requests. They would then be able to see all topic requests and upvote the ones they like. This way the Flatiron instructors would be able to better tell which topics their students need more support with and plan their study groups accordingly.
 
@@ -26,9 +26,10 @@ I decided to create three models for this project: `User`, `Upvote`, and `Req`.
 
 Below, you can see my model map which contains each model's attributes and associations.
 
->_**Confession Time:** Okay, truthfully my original app used the model name `Request` instead of `Req`, but when I got to the frontend part of my project I hit a major issue. I had errors popping up all over my console and had **no idea** where they were coming from! Then I got the idea to look up JavaScript's reserved words and—what do you know—`Request` is one of them! I changed it because I didn't want to use examples of bad code through my blog post. I promise the rest of this post is all factually accurate, exactly as it happened!_
+_**Confession Time:** Okay, truthfully my original app used the model name `Request` instead of `Req`, but when I got to the frontend part of my project I hit a major issue. I had errors popping up all over my console and had **no idea** where they were coming from! Then I got the idea to look up JavaScript's reserved words and—what do you know—`Request` is one of them! I changed it because I didn't want to use examples of bad code through my blog post. I promise the rest of this post is all factually accurate, exactly as it happened!_
 
-<a id="model-map"></a> ![Model Map (v1)][v1 model map]
+<a id="model-map"></a>
+![Model Map (v1)][v1 model map]
 
 ### Enum Attributes
 
