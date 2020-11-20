@@ -2,7 +2,7 @@
 layout: post
 title: "Everyday Inspiration"
 date: 2020-11-16 01:00:00 -0400
-featured-img: /img/post-images/model-map-v1.jpg
+featured-img: /img/post-images/everyday-inspiration.jpg
 # categories: [Flatiron School]
 tags: [Rails API, vanilla JavaScript, vanilla JS, JavaScript, JS, APIs]
 excerpt: <p>Inspiration for great project ideas are often derived from your everyday activities. Think about the places you go, the services you use. What can be improved upon? What are they missing that might give them that little "extra something" to tip them over the edge of greatness? This post talks about an idea I had for one of my Flatiron School curriculum projects that was born from none other than the school's own learning platform.</p>
