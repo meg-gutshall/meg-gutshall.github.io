@@ -25,6 +25,20 @@
             </a>
           </li>
           {% endif %}
+          {% if site.dev_username %}
+          <li>
+            <a class="social-icons" href="https://www.dev.to/{{ site.dev_username }}" target="_blank">
+              <i aria-hidden="true" class="fab fa-dev fa-3x" title="DEV logo"></i>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.youtube_id %}
+          <li>
+            <a class="social-icons" href="https://www.youtube.com/channel/{{ site.youtube_id }}" target="_blank">
+              <i aria-hidden="true" class="fab fa-youtube-square fa-3x" title="YouTube logo"></i>
+            </a>
+          </li>
+          {% endif %}
         </ul>
         <p class="copyright text-muted">Copyright &copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}</p>
       </div>
