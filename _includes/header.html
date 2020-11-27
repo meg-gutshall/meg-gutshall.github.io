@@ -6,31 +6,31 @@
         {% if layout.type == "pages" %}
           <!-- Page Header -->
           <div class="site-heading">
-              <h1>
-                {% if page.title == "Blog" %}
-                  {{ page.blog-title }}
-                {% elsif page.splash-title %}
-                  {{ page.splash-title }}
-                {% elsif page.title %}
-                  {{ page.title }}
-                {% else %}
-                  {{ site.title }}
-                {% endif %}
-              </h1>
-              <span class="subheading">
-                {% if page.title == "Blog" %}
-                  {{ site.description }}
-                {% endif %}
-              </span>
+            <h1>
+              {% if page.title == "Blog" %}
+                {{ page.blog-title }}
+              {% elsif page.splash-title %}
+                {{ page.splash-title }}
+              {% elsif page.title %}
+                {{ page.title }}
+              {% else %}
+                {{ site.title }}
+              {% endif %}
+            </h1>
+            <span class="subheading">
+              {% if page.title == "Blog" %}
+                {{ site.description }}
+              {% endif %}
+            </span>
           </div>
         {% elsif layout.type == "posts" %}
           <!-- Post Header -->
           <div class="post-heading">
-              <h1>{{ page.title }}</h1>
-              {% if page.subtitle %}
-              <h2 class="subheading">{{ page.subtitle }}</h2>
-              {% endif %}
-              <span class="meta">Posted by {% if site.author %}{{ site.author }}{% else %}{{ site.github_username}}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+            <h1>{{ page.title }}</h1>
+            {% if page.subtitle %}
+            <h2 class="subheading">{{ page.subtitle }}</h2>
+            {% endif %}
+            <span class="meta">Posted by {% if site.author %}{{ site.author }}{% else %}{{ site.github_username}}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
           </div>
         {% endif %}
       </div>
