@@ -1,6 +1,6 @@
 _site
-.jekyll-cache
 .sass-cache
 .jekyll-metadata
+.jekyll-cache
 .DS_Store
 .vscode
