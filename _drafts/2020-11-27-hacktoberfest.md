@@ -161,6 +161,7 @@ Here are some resources for people who are a bit more comfortable working with o
 - Pull Request Roulette: [http://www.pullrequestroulette.com/](http://www.pullrequestroulette.com/)
 - Code Triage: [https://www.codetriage.com/](https://www.codetriage.com/)
 - 24 Pull Requests: [https://24pullrequests.com/](https://24pullrequests.com/) (You bet your ass I'm going to bring this back for the holidays!)
+- Contrib: [https://gauger.io/contrib/#/language/javascript](https://gauger.io/contrib/#/language/javascript)
 
 The following projects/organizations I have either worked on/with or they were recommended to me by other trusted devs:
 
