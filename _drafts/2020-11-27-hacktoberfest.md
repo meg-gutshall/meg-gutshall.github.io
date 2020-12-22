@@ -108,11 +108,11 @@ There will be some commented-out lines at the top with directions and info on th
 
 <sup>[7]</sup>**Note:** You can configure your default text editor right from your terminal. The following are configuration options using some of the most popular editors right now:
 
-- VS Code: 'git config --global core.editor "code --wait"`
-- Atom: 'git config --global core.editor "atom --wait"`
-- Sublime (Mac): 'git config --global core.editor "subl -n -w"`
-- Sublime (Win, 32-bit install): 'git config --global core.editor "'c:/program files (x86)/sublime text 3/sublimetext.exe' -w"`
-- Sublime (Win, 64-bit install): 'git config --global core.editor "'c:/program files/sublime text 3/sublimetext.exe' -w"`
+- VS Code: `git config --global core.editor "code --wait"`
+- Atom: `git config --global core.editor "atom --wait"`
+- Sublime (Mac): `git config --global core.editor "subl -n -w"`
+- Sublime (Win, 32-bit install): `git config --global core.editor "'c:/program files (x86)/sublime text 3/sublimetext.exe' -w"`
+- Sublime (Win, 64-bit install): `git config --global core.editor "'c:/program files/sublime text 3/sublimetext.exe' -w"`
 
 ### Push It
 
