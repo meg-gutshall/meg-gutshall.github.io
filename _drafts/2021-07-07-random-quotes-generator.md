@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Open Your Terminal and Be Greeted with a Random Quote"
-date: 2021-07-07 23:37:00 -0400
-featured-img: /img/post-images/
+date: 2021-10-17 23:37:00 -0400
+featured-img: /img/post-images/random-quotes-generator/my-terminal.png
 # categories: [Flatiron School]
 tags: []
-excerpt: <p>Excerpt</p>
+excerpt: <p>What if you had an inspiration quote to greet you every time you open a new terminal? Now you can—and you can customize the list of quotes your random quote generator pulls from! Read on for a step-by-step guide on how to create your own.</p>
 ---
 
 Hey everyone! While talking about the back pocket topic today, we kept coming back to reducing project anxiety by breaking large tasks down into several smaller ones. I thought of a quote I like that illustrates this:
