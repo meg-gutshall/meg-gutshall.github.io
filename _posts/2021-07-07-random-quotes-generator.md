@@ -37,20 +37,12 @@ The `quote` variable is a path to the simple text file where my list of quotes a
 
 **Edge Case:** Leave a blank new line at the end of your text file. If the last quote in your file is randomly selected, the `PS1` in your terminal will appear on the same line directly after the quote if you don't do this!
 
-This snippet `awk "END{ print $RANDOM%NR+1}" $quote` is actually using the [AWK scripting language](https://en.wikipedia.org/wiki/AWK)!
-We’re passing the `awk` command options in the double quotes and an input file in the form of the variable `quote` (as defined on the line above it).
+This snippet `awk "END{ print $RANDOM%NR+1}" $quote` is actually using the [AWK scripting language](https://en.wikipedia.org/wiki/AWK)! This denotes that we're executing the action `{ print $RANDOM%NR+1}` for the pattern `END` on the file represented by the variable `$quote` (as defined on the line above it). `END` counts the number of lines in the entire `$quote` file. Then `NR` returns the specified row number, which in this case is that of the last line as denoted by `END`, and the result of `$RANDOM%NR+1` is printed out. `$RANDOM` is a built-in bash variable that returns a random integer, which we use as the numberator to `NR`'s denominator to return to remainder using the [modulo operation (`%`)](https://en.wikipedia.org/wiki/Modulo_operation).
 
-`awk` options:
+**Edge Case:** After the remainder is calculated, we increment by one. Doing this accounts for a remainder of zero and ensures that a quote will always be returned.
 
-- The `NR` option returns the specified row number.
-- The `END` option counts the number of lines in the entire file.
+Do you see how that whole code snippet is encapsulated in `$()`? Let’s take the number we just returned and assign it to the variable `modulo` for the rest of this breakdown.
 
-Lastly, `$RANDOM` is a built-in bash variable that returns a random integer.
-
-In this snippet, the total number of lines for the quotes file is calculated by `END`. We use this number as the denominator to the random number’s numerator and return the remainder. This is also called the modulo operation (`%`). We then increment by one in case the remainder happens to be zero—this ensures that a quote will always be returned.
-
-Do you see how that whole code snippet is encapsulated in `$()`? Let’s take that number we just returned using all that arithmetic and assign it to the variable `modulo` for the rest of this breakdown.
-
-Now what we’re left with is `sed -n $(modulo)p $quote`. [`sed` isn’t bash](https://en.wikipedia.org/wiki/Sed)—it’s actually a Unix utility called a stream editor! And like Awk, we can pass it options before passing the input file. By default, `sed` prints out all processed input so we use `-n` to suppress output and `p` to print specific lines. We already know from above that `modulo` is a random number that maps to the number of lines in your quote text file, therefore, you should see a random quote from your file print to the terminal!
+Now what we’re left with is `sed -n $(modulo)p $quote`. `sed` isn’t bash—[`sed` is actually a Unix utility called a stream editor](https://en.wikipedia.org/wiki/Sed)! And like AWK, we can pass it options before passing the input file. By default, `sed` prints out all processed input so we use `-n` to suppress output and `p` to print specific lines. We already know from above that `modulo` is a random number that maps to the number of lines in your quote text file, therefore, you should see a random quote from your file print to the terminal!
 
 I also have a pretty little bash prompt that shows me where I am in my directory, has custom colors, and displays git repos and branches. If you want to know more about this setup, DM me on Twitter [@meg_gutshall](https://twitter.com/meg_gutshall)!
