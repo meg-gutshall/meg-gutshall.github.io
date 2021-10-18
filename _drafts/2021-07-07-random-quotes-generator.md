@@ -29,6 +29,8 @@ function prompt {
 
 It's that simple!
 
+![My terminal prompt](/img/post-images/random-quotes-generator/my-terminal.png)
+
 ## A Breakdown of the Above
 
 The `quote` variable is a path to the simple text file where my list of quotes are stored. Depending on your editor (I use Mac’s default, TextEdit), the quotes may wrap. That’s okay as long as you start each new quote on a separate line. **Edge Case:** Leave a blank new line at the end of your text file or else the `PS1` in your terminal will appear on the same line directly after the final quote in your list.
@@ -47,4 +49,4 @@ Do you see how that whole code snippet is encapsulated in `$()`? Let’s take th
 
 Now what we’re left with is `sed -n $(modulo)p $quote`. `sed` isn’t bash—it’s actually a Unix utility called a stream editor! And like Awk, we can pass it options before passing the input file. By default, `sed` prints out all processed input so we use `-n` to suppress output and `p` to print specific lines. We already know from above that `modulo` is a random number that maps to the number of lines in your quote text file, therefore, you should see a random quote from your file print to the terminal!
 
-I also have a pretty little bash prompt that shows me where I am in my directory, has custom colors, and displays git repos and branches (see picture). If you want to know more about this setup, DM me on Twitter [@meg_gutshall](https://twitter.com/meg_gutshall)!
+I also have a pretty little bash prompt that shows me where I am in my directory, has custom colors, and displays git repos and branches. If you want to know more about this setup, DM me on Twitter [@meg_gutshall](https://twitter.com/meg_gutshall)!
