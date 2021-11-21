@@ -5,8 +5,8 @@ header-img: img/home-bg.png
 email: meghan.gutshall@gmail.com
 copyright_name: Meg Gutshall
 description: > # this means to ignore newlines until "baseurl:"
-  The unedited thoughts of an unconventional programmer
-baseurl: "" # the subpath of your site, e.g. /blog
+  The uncensored thoughts of an unconventional programmer
+baseurl: '' # the subpath of your site, e.g. /blog
 github_username: meg-gutshall
 twitter_username: meg_gutshall
 linkedin_username: meghan-gutshall
@@ -17,10 +17,10 @@ youtube_id: UCUFzGA_o3MixAj6awfWvzBQ
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-exclude: ["less","Gruntfile.js","package.json","README.md"]
+exclude: ['less', 'Gruntfile.js', 'package.json', 'README.md']
 
 # Gem configuration settings
 paginate: 6
-paginate_path: "/blog/page:num/"
+paginate_path: '/blog/page:num/'
 
 plugins: [jekyll-paginate, jekyll-feed, jemoji]
