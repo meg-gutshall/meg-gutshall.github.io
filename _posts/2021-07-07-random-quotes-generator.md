@@ -8,15 +8,15 @@ tags: []
 excerpt: <p>What if you had an inspirational quote to greet you every time you opened a new terminal? Now you can! Plus, you can customize the list of quotes your random quote generator pulls from! Read on for a step-by-step guide on how to implement this simple script in your terminal setup.</p>
 ---
 
-I'm a member of this amazing online community called [Virtual Coffee](https://virtualcoffee.io/). We meet twice a week and have conversations about the tech industry as well as tech-adjcent topics. In today's meeting, we kept coming back to reducing project anxiety by breaking large tasks down into several smaller ones. I kept thinking of a quote I like that illustrates this:
+I'm a member of this amazing online community called [Virtual Coffee](https://virtualcoffee.io/). We meet twice a week and have conversations about the tech industry as well as tech-adjcent topics. In today's meeting, we kept coming back to reducing project anxiety by breaking large tasks down into several smaller ones. It reminded me of a quote I revisit often when I feel overwhelmed:
 
 > _The person who removes a mountain begins by carrying away small stones. —Chinese Proverb_
 
-In fact, I have a whole file of quotes I pick up here and there that bring me joy and inspiration. I’ve created a bash script that outputs one quote from this file at random every time I open a new terminal. After sharing this with my Virtual Coffee group, they were eager to learn how I did it, so here's a step-by-step write up for you to create a random quote generator of your own!
+In fact, I have a whole file filled with quotes I pick up here and there that bring me joy and inspiration. I’ve created a bash script which outputs one quote at random from this file every time I start up a new terminal session. After sharing this with my Virtual Coffee group, they were eager to learn how I did it, so here's a step-by-step write up for you to create a random quote generator of your own!
 
 ## The Script
 
-Add the following code inside the `prompt` function in your .bash_profile file, just above the line where you define `export PS1`:
+Add the following `quote` function to your <span class="bold teal">.bash_profile<span> file and call it just above the line where you define `export PS1`:
 
 ```bash
 function prompt {
