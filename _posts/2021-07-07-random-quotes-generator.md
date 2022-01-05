@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Random Quote Generator for Your Terminal"
+title: 'A Random Quote Generator for Your Terminal'
 date: 2021-07-07 21:37:00 -0400
 featured-img: /img/post-images/random-quotes-generator/my-terminal.png
 # categories: [Flatiron School]
@@ -10,8 +10,7 @@ excerpt: <p>What if you had an inspirational quote to greet you every time you o
 
 I'm a member of this amazing online community called [Virtual Coffee](https://virtualcoffee.io/). We meet twice a week and have conversations about the tech industry as well as tech-adjcent topics. In today's meeting, we kept coming back to reducing project anxiety by breaking large tasks down into several smaller ones. I kept thinking of a quote I like that illustrates this:
 
-> _The person who removes a mountain begins by carrying away small stones._
-> _—Chinese Proverb_
+> _The person who removes a mountain begins by carrying away small stones. —Chinese Proverb_
 
 In fact, I have a whole file of quotes I pick up here and there that bring me joy and inspiration. I’ve created a bash script that outputs one quote from this file at random every time I open a new terminal. After sharing this with my Virtual Coffee group, they were eager to learn how I did it, so here's a step-by-step write up for you to create a random quote generator of your own!
 
