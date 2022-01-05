@@ -16,7 +16,7 @@ In fact, I have a whole file filled with quotes I pick up here and there that br
 
 ## The Script
 
-Add the following `quote` function to your <span class="bold teal">.bash_profile<span> file and call it just above the line where you define `export PS1`:
+Add the following `quote` function to your <span class="purple">.bash_profile</span> and call it just above the line where you define `export PS1`:
 
 ```bash
 function quote {
